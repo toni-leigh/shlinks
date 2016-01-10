@@ -329,6 +329,13 @@
                     $vals['id']=$id;
                     $this->stream_model->store_action(0,$this->user,$vals,null);
 
+                // the signed in creator of the node is automatically set to follow it
+                    if ($type!='image')
+                    {
+                        $this->load->model('connection_save_model');
+                        $this->connection_save_model->update($this->user,$vals,'F',2,true,true);
+                    }
+
                 // add the video
                 if (isset($old_node['video_src']) && isset($vals['video_src']))
                 {
@@ -507,30 +514,6 @@
     }
 
     /* *************************************************************************
-         page_save() - saves the details for a page including setting up the nav page entries
-         @param array $vals - the form values
-         @param numeric $id - the id of the page node
-    */
-    public function category_save($vals,$id)
-    {
-        /* BENCHMARK */ $this->benchmark->mark('func_category_save_start');
-
-        /* BENCHMARK */ $this->benchmark->mark('func_category_save_end');
-    }
-
-    /* *************************************************************************
-         page_save() - saves the details for a page including setting up the nav page entries
-         @param array $vals - the form values
-         @param numeric $id - the id of the page node
-    */
-    public function page_save($vals,$id)
-    {
-        /* BENCHMARK */ $this->benchmark->mark('func_page_save_start');
-
-        /* BENCHMARK */ $this->benchmark->mark('func_page_save_end');
-    }
-
-    /* *************************************************************************
          product_save() - saves stuff for the product
          @param array $vals - the new product vals
          @param int $id - the product to update
@@ -591,20 +574,6 @@
     }
 
     /* *************************************************************************
-         user_save() -
-         @param string
-         @param numeric
-         @param array
-         @return
-    */
-    public function user_save($vals,$id)
-    {
-        /* BENCHMARK */ $this->benchmark->mark('func_user_save_start');
-
-        /* BENCHMARK */ $this->benchmark->mark('func_user_savee_end');
-    }
-
-    /* *************************************************************************
          mass_update() - operates on a set nodes to update values
          @param string $type - the node type for the mass update
          @param array $vals - the values from the form for update
@@ -618,7 +587,15 @@
             $this->load->helper('url_helper');
 
         // get the nodes to check for mass update
-            $nodes=$this->node_model->get_nodes(array('type'=>$type,'user_id'=>$this->user['user_id'],'protected'=>0));
+            $nodes_array=array(
+                'type'=>$type,
+                'protected'=>0
+            );
+            if ($this->user['user_type']!='super_admin')
+            {
+                $nodes_array['user_id']=$this->user['user_id'];
+            }
+            $nodes=$this->node_model->get_nodes($nodes_array);
 
         // various values for the update operation
             $update_nodes=array();
@@ -650,6 +627,8 @@
 
         // a string to build a stock notify email
             $stock_notify='';
+
+        $score_adjust=array();
 
         // iterate over all nodes
             foreach ($nodes as $node)
@@ -692,6 +671,77 @@
 
                         // update the action table for this node
                             $this->stream_model->update_visible($node,$visible);
+
+                        // now do some score calculations to set the scores for visible or not
+                        // we only do this if the visibility has changed
+                            if ($node['visible']!=$visible)
+                            {
+                                $score_total=0;
+
+                                // actors first, the actions of the node owning user
+                                $query=$this->db->select(
+                                    "sum(actor_score) as 'full_score'")->from(
+                                    'action')->where(array('actor_id'=>$node['user_id'],'target_id'=>$node['id']));
+                                $res=$query->get();
+                                $full_score=$res->row_array();
+
+                                $score_total+=$full_score['full_score'];
+
+                                // then targets, action is performed on this node
+                                $query=$this->db->select(
+                                    "sum(target_owner_score) as 'full_score'")->from(
+                                    'action')->where(array('actor_id !='=>$node['user_id'],'target_id'=>$node['id']));
+                                $res=$query->get();
+                                $full_score=$res->row_array();
+
+                                $score_total+=$full_score['full_score'];
+
+                                // make sure the array element for this user id exists
+                                if(!isset($score_adjust[$node['user_id']]))
+                                {
+                                    $score_adjust[$node['user_id']]=0;
+                                }
+
+                                // adjust the score
+                                if (0==$visible)
+                                {
+                                    $score_adjust[$node['user_id']]+=0-$score_total;
+                                }
+                                else
+                                {
+                                    $score_adjust[$node['user_id']]+=$score_total;
+                                }
+
+                                // now if this is a user having visibility set we need to find all their
+                                // actions on other nodes and add their owners into the array too
+                                if ('user'==$node['type'])
+                                {
+                                    $query=$this->db->select('*')->from('action')->where(array('actor_id'=>$node['id']));
+                                    $res=$query->get();
+                                    $actions=$res->result_array();
+
+                                    foreach ($actions as $a)
+                                    {
+                                        if ($a['target_owner_score']>0)
+                                        {
+                                            if(!isset($score_adjust[$a['target_owner_id']]))
+                                            {
+                                                $score_adjust[$a['target_owner_id']]=0;
+                                            }
+
+                                            // adjust the score
+                                            if (0==$visible)
+                                            {
+                                                $score_adjust[$a['target_owner_id']]+=0-$a['target_owner_score'];
+                                            }
+                                            else
+                                            {
+                                                $score_adjust[$a['target_owner_id']]+=$a['target_owner_score'];
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                     }
 
                 // if the node is a product then use the mass adjust values to update the prices
@@ -905,6 +955,14 @@
         // set the link list
 			$this->update_linklist();
 
+        // update the users score
+            $this->load->model('score_model');
+            foreach ($score_adjust as $user_id=>$score)
+            {
+                $user=$this->node_model->get_node($user_id);
+                $this->score_model->update_score($user,$score);
+            }
+
         /* BENCHMARK */ $this->benchmark->mark('func_mass_update_end');
 
         return $message_append;
@@ -972,6 +1030,44 @@
         /* BENCHMARK */ $this->benchmark->mark('func_undo_mass_end');
     }
 
+     /* *************************************************************************
+          page_save() - saves the details for a page including setting up the nav page entries
+          @param array $vals - the form values
+          @param numeric $id - the id of the page node
+     */
+     public function category_save($vals,$id)
+     {
+         /* BENCHMARK */ $this->benchmark->mark('func_category_save_start');
+
+         /* BENCHMARK */ $this->benchmark->mark('func_category_save_end');
+     }
+
+     /* *************************************************************************
+          page_save() - saves the details for a page including setting up the nav page entries
+          @param array $vals - the form values
+          @param numeric $id - the id of the page node
+     */
+     public function page_save($vals,$id)
+     {
+         /* BENCHMARK */ $this->benchmark->mark('func_page_save_start');
+
+         /* BENCHMARK */ $this->benchmark->mark('func_page_save_end');
+     }
+
+     /* *************************************************************************
+          user_save() -
+          @param string
+          @param numeric
+          @param array
+          @return
+     */
+     public function user_save($vals,$id)
+     {
+         /* BENCHMARK */ $this->benchmark->mark('func_user_save_start');
+
+         /* BENCHMARK */ $this->benchmark->mark('func_user_savee_end');
+     }
+
     /* *************************************************************************
          group_save() -
          @param string
@@ -1017,58 +1113,48 @@
             if ($node['user_id']==$this->user['user_id'] or
                 'super_admin'==$this->user['user_type'])
             {
-                // undo score (undoes create)
-                // we don't want to undo all scores (i.e. if a user is deleted scores still stand)
-                    $this->load->model('score_model');
-                    $this->load->model('stream_model');
 
-                    // sum up all scores where the deleting user is acting on the deleted node
-                        $query=$this->db->select("sum(actor_score) as 'full_score'")->from('action')->where(array('actor_id'=>$this->user['user_id'],'target_id'=>$node['id']));
-                        $res=$query->get();
-                        $full_score=$res->row_array();
+                if ($id!=1)
+                {
 
-                        if (!is_numeric($full_score))
+                    // remove actions
+                        $this->db->delete('action',array('actor_id'=>$id));
+                        $this->db->delete('action',array('target_id'=>$id));
+                        $this->db->delete('action',array('target_owner_id'=>$id));
+
+                    // event delete removes sequence from calendar
+                        if ('event'==$type)
                         {
-                            $full_Score=0;
+                            $this->load->model('events_admin_model');
+                            $event=$this->node_model->get_node($id,'event');
+                            $this->events_admin_model->delete_sequence($event);
                         }
 
-                        $this->score_model->update_score($this->user,(0-$full_score['full_score']));
+                    // calendar delete removes events
+                        $this->db->delete('event',array('calendar_id'=>$id));
 
-                // remove node and images
-                    $this->db->delete('node',array('id'=>$id));
-                    $this->db->delete('image',array('node_id'=>$id));
+                    // remove details
+                        $key_id=('user'==$type) ? 'user_id' : 'node_id';
+                        $this->db->delete($type,array($key_id=>$id));
 
-                // remove actions
-                    $this->db->delete('action',array('actor_id'=>$id));
-                    $this->db->delete('action',array('target_id'=>$id));
-                    $this->db->delete('action',array('target_owner_id'=>$id));
+                    // remove node and images
+                        $this->db->delete('node',array('id'=>$id));
+                        $this->db->delete('image',array('node_id'=>$id));
 
-                // remove details
-                    $this->db->delete($type,array('node_id'=>$id));
+                    // remove variations
+                        $query=$this->db->select('nvar_id')->from('nvar')->where(array('node_id'=>$id));
+                        $res=$query->get();
+                        $nvars=$res->result_array();
 
-                // calendar delete removes events
-                    $this->db->delete('event',array('calendar_id'=>$id));
+                        foreach ($nvars as $n)
+                        {
+                            $this->db->delete('nvar',array('nvar_id'=>$n['nvar_id']));
+                            $this->db->delete('nvar_value',array('nvar_id'=>$n['nvar_id']));
+                        }
 
-                // event delete removes sequence from calendar
-                    if ('event'==$type)
-                    {
-                        $this->load->model('events_admin_model');
-                        $event=$this->node_model->get_node($id,'event');
-                        $this->events_admin_model->delete_sequence($event);
-                    }
+                        $this->db->delete('nvar_type',array('node_id'=>$id));
 
-                // remove variations
-                    $query=$this->db->select('nvar_id')->from('nvar')->where(array('node_id'=>$id));
-                    $res=$query->get();
-                    $nvars=$res->result_array();
-
-                    foreach ($nvars as $n)
-                    {
-                        $this->db->delete('nvar',array('nvar_id'=>$n['nvar_id']));
-                        $this->db->delete('nvar_value',array('nvar_id'=>$n['nvar_id']));
-                    }
-
-                    $this->db->delete('nvar_type',array('node_id'=>$id));
+                }
             }
 
 

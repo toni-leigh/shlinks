@@ -13,8 +13,6 @@
     echo    $event_form;
     echo "</div>";
 
-    echo "<span id='current_admin'>... managing events for '".$admin_calendar['name']."' ...</span>";
-
     echo "<div id='admin_calendar'>";
     echo $month_slider['undo'];
     echo $month_slider['calendar'];

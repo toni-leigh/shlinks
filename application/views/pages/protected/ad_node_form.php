@@ -20,6 +20,36 @@
 <?php
     if ($type!='video')
     {
+        // output the were you looking for message:
+            if (isset($edit_node['node_list']))
+            {
+                $edit_node_list=json_decode($edit_node['node_list'],true);
+
+                if (count($edit_node_list)>0)
+                {
+                    echo "<div class='looking_for'>";
+                    echo "were you looking for your:<br/>";
+
+                    $links='';
+                    foreach ($edit_node_list as $enl)
+                    {
+                        switch ($enl)
+                        {
+                            case 'blog':
+                                $links.="<a href='/".$enl."/list'>blog posts</a><br/>";
+                                break;
+                            case 'event':
+                                $links.="<a href='/".$enl."/list'>events list</a><br/>";
+                                break;
+                            case 'calendar':
+                                $links.="<a href='/".$enl."/list'>calendars</a><br/>";
+                        }
+                    }
+                    echo $links;
+                    echo "</div>";
+                }
+            }
+
         // out put calendar hash
             if ('calendar'==$type &&
                 is_numeric($edit_node['id']))
@@ -48,7 +78,7 @@
                 $attr=array(
                     'name'=>'name',
                     'id'=>'name',
-                    'class'=>'form_field',
+                    'class'=>'form_field js-store',
                     'value'=>get_value($edit_node,'name'),
                     'maxlength'=>255,
                     'onkeyup'=>'char_count(\'name\',255)'
@@ -73,7 +103,7 @@
                 $attr=array(
                     'name'=>'tags',
                     'id'=>'tags',
-                    'class'=>'form_field',
+                    'class'=>'form_field js-store',
                     'value'=>get_value($edit_node,'tags'),
                     'maxlength'=>255,
                     'onkeyup'=>'char_count(\'tags\',255)'
@@ -102,7 +132,7 @@
                 $attr=array(
                     'name'=>'admin_tags',
                     'id'=>'admin_tags',
-                    'class'=>'form_field',
+                    'class'=>'form_field js-store',
                     'value'=>get_value($edit_node,'admin_tags')
                 );
                 echo form_input($attr,null,'onkeyup="filter_admin_tags()" onfocus="show_atags()"');
@@ -221,7 +251,7 @@
             $attr=array(
                 'name'=>'short_desc',
                 'id'=>'short_desc',
-                'class'=>'form_field',
+                'class'=>'form_field js-store',
                 'value'=>get_value($edit_node,'short_desc'),
                 'maxlength'=>156,
                 'onkeyup'=>'char_count(\'short_desc\',156)'
@@ -237,6 +267,16 @@
                     </script>
             <?php
 
+        // video src
+            echo form_label('Video Source (youtube, just the 11 character code from the URL "v=<span style="color:#ff7c00;">{CODE}</span>"):','video_src',array('class' => 'form_label rounded'));
+            $attr=array(
+                'name'=>'video_src',
+                'id'=>'video_src',
+                'class'=>'form_field js-store',
+                'value'=>get_value($edit_node,'video_src')
+            );
+            echo form_input($attr);
+
         // author
             if ('blog'==$type)
             {
@@ -244,7 +284,7 @@
                 $attr=array(
                     'name'=>'author',
                     'id'=>'author',
-                    'class'=>'form_field',
+                    'class'=>'form_field js-store',
                     'value'=>get_value($edit_node,'author')
                 );
                 echo form_input($attr);
@@ -294,7 +334,7 @@
                     $attr=array(
                         'name'=>'until_date',
                         'id'=>'until_date',
-                        'class'=>'form_field',
+                        'class'=>'form_field js-store',
                         'value'=>get_value($edit_node,'until_date')
                     );
                     echo form_input($attr);
@@ -310,7 +350,7 @@
                     echo form_label('Display Granularity - the unit of time that calendar displays in:','granularity',array('class' => 'form_label'));
                     $granularities=array('day','month','year');
 
-                    echo "<select id='granularity_select' class='form_field' name='granularity'>";
+                    echo "<select id='granularity_select' class='form_field js-store' name='granularity'>";
 
                     // set duration selection
                         if (!isset($edit_node['granularity']))
@@ -332,7 +372,7 @@
                         $attr=array(
                             'name'=>'css_link',
                             'id'=>'css_link',
-                            'class'=>'form_field',
+                            'class'=>'form_field js-store',
                             'value'=>get_value($edit_node,'css_link')
                         );
                         echo form_input($attr);
@@ -397,18 +437,49 @@
                     <div id='nodeform_body_panel' class='panel_details'>
                     <?php
 
-            echo "<div id='textarea_down'>"; // tinymce is soo annoying sometimes
-            // html text box (stored in indvidual tables, set in node form)
-                echo form_label('Details Text:','node_html',array('class' => 'form_label'));
-                $attr=array(
-                    'name'=>'node_html',
-                    'id'=>'node_html',
-                    'class'=>'form_field',
-                    'value'=>get_value($edit_node,'node_html')
-                );
-                echo form_textarea($attr);
-            echo "</div>";
+                        echo "<div id='textarea_down'>"; // tinymce is soo annoying sometimes
+                        // html text box (stored in indvidual tables, set in node form)
+                            echo form_label('Details Text:','node_html',array('class' => 'form_label'));
+                            $attr=array(
+                                'name'=>'node_html',
+                                /*'id'=>'node_html',*/
+                                'class'=>'form_field js-store',
+                                'value'=>get_value($edit_node,'node_html')
+                            );
+                            echo form_textarea($attr);
+                        echo "</div>";
+                    ?>
+                    </div>
+                </div>
+                <?php
+
+        // lists
                 ?>
+                <div class='panel'>
+                    <h2>
+                        <span id='nodeform_list_heading' class='ad_heading_text noselect' onclick='open_height("nodeform_list")'>Lists</span>
+                        <span id='nodeform_list_show' class='sprite panel_open noselect' onclick='open_height("nodeform_list")'></span>
+                    </h2>
+                    <div id='nodeform_list_panel' class='panel_closed panel_details'>
+                        <?php
+                        echo form_label('Lists:','node_list',array('class' => 'form_label'));
+                        ?>
+                            <div class='full_width'>
+                                <select id='node_list_select' class='js-store' name='node_list[]' multiple='multiple' size='8'>
+                                    <?php
+                                        $edit_node_list=json_decode($edit_node['node_list'],true);
+                                        if (!is_array($edit_node_list)) $edit_node_list=array();
+                                        foreach ($node_types as $t)
+                                        {
+                                            if (in_array($t['type'],$edit_node_list) ? $selected="selected='selected'" : $selected="" );
+                                            echo "<option value='".$t['type']."' ".$selected.">".$t['type']."</option>";
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                        <?php
+                        ?>
+
                     </div>
                 </div>
                 <?php
@@ -431,36 +502,56 @@
                             drag the map to get the location in the cross hairs and then when the form is saved that location will be saved with it
                             - the map pointer is accurate to within a couple of metres
                         </p>
-                        <label class='map_button' for='map_activate'>click to activate</label><input id='map_activate' type='checkbox'/>
-                        <input id='map_postcode' type='text' name='map_postcode' value='ne49al'/>
-                        <span class='map_button' id='map_search'>search for postcode</span>
+                        <p>
+                            if you want to drag the map to a location then click to activate first. if you use the location search then the map point
+                            will be saved regardless of whether the drag is activated
+                        </p>
+                        <div class='map_control_row'>
+                            <label class='map_button' for='map_activate'>click to activate drag</label><input id='map_activate' type='checkbox'/>
+                        </div>
+                        <div class='map_control_row'>
+                            <input id='map_search_field' class='form_field js-store' type='text' name='map_search' value='' placeholder='postcode or location name'/>
+                            <span class='map_button' id='map_search' title='postcode or location name'>search map</span>
+                        </div>
                         <script type='text/javascript'>
                             if (window.focus)
                             {
-                                $('#map_search').on('click',search_postcode);
-
                                 function search_postcode()
                                 {
                                     $.ajax({
                                         type: 'GET',
                                         url: '/map/lookup_postcode',
                                         dataType: 'json',
-                                        data: { postcode:$('#map_postcode').val() },
+                                        data: { postcode:$('#map_search_field').val() },
                                         success: function (new_html)
                                         {
                                             map.setCenter(new google.maps.LatLng(new_html[0],new_html[1]));
-                                            $('#latitude').val(lat_lng.jb);
-                                            $('#longitude').val(lat_lng.kb);
+                                            lat_lng=map.getCenter();
+                                            $('#latitude').val(lat_lng.lat());
+                                            $('#longitude').val(lat_lng.lng());
+                                            $('.on_map').css('display','none');
                                         }
                                     });
                                 }
+
+                                function catch_enter(e)
+                                {
+                                    if (13 === e.which)
+                                    {
+                                        $('#map_search').trigger('click');
+
+                                        return false;
+                                    }
+                                }
+
+                                $('#map_search').on('click',search_postcode);
+
+                                $('#map_search_field').on('keydown',catch_enter);
                             }
                         </script>
                         <script type='text/javascript'>
                             if (window.focus)
                             {
-                                $('#map_activate').on('change',toggle_activate);
-
                                 function toggle_activate()
                                 {
                                     if (true==map.draggable)
@@ -472,24 +563,38 @@
                                         map.setOptions({draggable: true});
                                     }
                                 }
+
+                                $('#map_activate').on('change',toggle_activate);
                             }
                         </script>
                         <?php
-                            if (isset($edit_node['latitude']))
+                            if (isset($edit_node['latitude']) &&
+                                $edit_node['latitude']!=999)
                             {
                                 $lat=$edit_node['latitude'];
                                 $long=$edit_node['longitude'];
+                                $form_lat=$edit_node['latitude'];
+                                $form_long=$edit_node['longitude'];
+                                $not_on_map_class='is_not_visible';
                             }
                             else
                             {
                                 $map_centre=$this->config->item('map_centre');
                                 $lat=$map_centre['latitude'];
                                 $long=$map_centre['longitude'];
+                                $form_lat=999;
+                                $form_long=999;
+                                $not_on_map_class='is_visible';
                             }
                         ?>
-                        <input id='latitude' type='hidden' name='latitude' value='<?php echo $edit_node['latitude']; ?>'/>
-                        <input id='longitude' type='hidden' name='longitude' value='<?php echo $edit_node['longitude']; ?>'/>
-                        <div id='map'>
+                        <div class='map_control_row'>
+                            <span class='latlng_label'>latitude</span><input id='latitude' class='form_field js-store' type='text' name='latitude' value='<?php echo $form_lat; ?>'/><span class='on_map <?php echo $not_on_map_class; ?>'>not on map!</span>
+                        </div>
+                        <div class='map_control_row'>
+                            <span class='latlng_label'>longitude</span><input id='longitude' class='form_field js-store' type='text' name='longitude' value='<?php echo $form_long; ?>'/><span class='on_map <?php echo $not_on_map_class; ?>'>not on map!</span>
+                            <span class='map_remove map_button'>remove from map</span>
+                        </div>
+                        <div id='map' class='admin_map'>
                         </div>
                         <div class='cross_hair'>
                         </div>
@@ -508,6 +613,11 @@
                         ?>
 
                         <script type="text/javascript">
+                            $('.map_remove').on('click',function() {
+                                $('#latitude').val(999);
+                                $('#longitude').val(999);
+                                $('.on_map').css('display','block');
+                            });
                             function initialise()
                             {
                                 var mapOptions =
@@ -517,14 +627,16 @@
                                 };
 
                                 map = new google.maps.Map(document.getElementById("map"),mapOptions);
-
-                                google.maps.event.addListener(map, 'bounds_changed',function()
+                                google.maps.event.addListener(map, "dragstart",function(event)
+                                {
+                                    google.maps.event.addListener(map, "idle", function(event2)
                                     {
                                         lat_lng=map.getCenter();
-                                        $('#latitude').val(lat_lng.jb);
-                                        $('#longitude').val(lat_lng.kb);
-                                    }
-                                );
+                                        $('#latitude').val(lat_lng.lat());
+                                        $('#longitude').val(lat_lng.lng());
+                                        $('.on_map').css('display','none');
+                                    });
+                                });
                             }
 
                             if (window.focus)
@@ -534,13 +646,12 @@
 
                             /*  */
                         </script>
-                    <?php
-                    ?>
                     </div>
                 </div>
                 <?php
             }
     }
+
 
     // see the form/node_edit_close for submit and close
     // the form close is here because another view opens up specific form fields for node type in between
@@ -550,7 +661,7 @@
                 $attr=array(
                     'name'=>'submit',
                     'id'=>$type.'_edit_submit',
-                    'class'=>'submit'
+                    'class'=>'submit js-submit-button'
                 );
                 echo form_submit($attr,'save '.$human_type);
 
@@ -560,6 +671,12 @@
             echo "</div>";
             echo "</div>";
             echo "<div class='admin_instructions'>";
+
+        // local storage differences message
+            echo "<p id='local_storage_message'>we saved some data from your last visit ";
+            echo "that you didn't save to the database, click here if you would like to reload ";
+            echo "this data (you can also just ignore this message and edit)";
+            echo "</p>";
 
             // defaults
                 if (is_numeric($edit_node['id']) ? $action='edit' : $action='create' );
@@ -640,4 +757,242 @@
             echo    "other create forms</p>";
             echo "</div>";
         }
+    ?>
+
+    <script type="text/javascript">
+        ;(function() {
+
+            'use strict';
+
+            var t;
+
+            // the collection of inputs to focus on
+            var targets;
+
+            // arbitrary key to identify this form, must be unique sitewide
+            var form_id;
+
+            // the realod button
+            var reload_button;
+
+            // map if present
+            var map;
+
+            // the values saved on load form to compare to
+            // and the current values that represent the state of the form right now
+            var values={
+                on_load_vals:{},
+                saved_vals:{}
+            };
+
+            // the current input
+            var input;
+
+            function SaveForm(params) {
+
+                t = this;
+
+                targets=params.input_collection;
+                form_id=params.form_id;
+                reload_button=params.reload_button;
+                map=params.map;
+
+                // initialise
+                t._set_ids();
+                t._retrieve_saved();
+                t._store_form('on_load_vals');
+                t._bind_events();
+
+                // check for differences between the database load and the stored values
+                t._compare();
+            }
+
+            SaveForm.prototype = {
+
+                /* sets ids on any elements that don't have them */
+                _set_ids: function()
+                {
+                    var id_counter=0;
+
+                    targets.each(
+                        function()
+                        {
+                            var input=$(this);
+                            var id=input.attr('id');
+
+                            if ('undefined' === typeof id)
+                            {
+                                input.attr('id','form_save'+id_counter);
+                                id_counter++;
+                            }
+                        }
+                    );
+                },
+
+                /* retrieves the saved values from local storage */
+                _retrieve_saved: function()
+                {
+                    var saved=$.parseJSON(localStorage.getItem(form_id));
+
+                    if (saved !== null)
+                    {
+                        if (typeof saved.saved_vals !== 'undefined')
+                        {
+                            values.saved_vals=saved.saved_vals;
+                        }
+                    }
+                },
+
+                /* stores the current contents of the form */
+                _store_form: function(target)
+                {
+                    targets.each(
+                        function()
+                        {
+                            var input=$(this);
+
+                            values[target][input.attr('id')]=input.val();
+
+                            console.log(input.val());
+                        }
+                    );
+
+                    t._save_to_local();
+                },
+
+                /* binds the required events to the inputs etc. */
+                _bind_events: function()
+                {
+                    targets.each(
+                        function()
+                        {
+                            var input=$(this);
+
+                            input.on('blur',t._save_value);
+                        }
+                    );
+
+                    reload_button.on('click',t._load_saved);
+                },
+
+                /* saves the value from an input */
+                _save_value: function()
+                {
+                    input=$(this);
+
+                    values.saved_vals[input.attr('id')]=input.val();
+
+                    t._save_to_local();
+                },
+
+                /* specifically saves a tinymce value */
+                _save_tinymce_value: function(tiny_mce)
+                {
+                    values.saved_vals[tiny_mce.id]=tiny_mce.getContent();
+
+                    t._save_to_local();
+                },
+
+                /* saves the values array to local storage */
+                _save_to_local: function()
+                {
+                    localStorage.setItem(form_id,JSON.stringify(values));
+                },
+
+                /* loads the saved data on response to the users decision to */
+                _load_saved: function()
+                {
+                    t._retrieve_saved();
+
+                    // get the contents of the targets
+                    targets.each(
+                        function()
+                        {
+                            var input=$(this);
+
+                            var id=input.attr('id');
+
+                            var saved_val=values.saved_vals[id];
+
+                            if (typeof saved_val !== 'undefined')
+                            {
+                                if (typeof tinyMCE.get(id) !== 'undefined')
+                                {
+                                    tinyMCE.get(id).setContent(saved_val);
+                                }
+                                else
+                                {
+                                    input.val(saved_val);
+                                }
+                            }
+                        }
+                    );
+
+                    // centre the map if it is present
+                    var lat=targets.find('#latitude');
+                    var lng=targets.find('#longitude');
+                    if (lat.length>0 &&
+                        lng.length>0)
+                    {
+                        var lat_val=lat.val();
+                        var lng_val=lng.val();
+
+                        if (lat_val!="999" &&
+                            lng_val!="999" &&
+                            typeof map !== 'undefined')
+                        {
+                            map.setCenter(new google.maps.LatLng(lat_val,lng_val));
+                        }
+                    }
+
+                    reload_button.animate({'opacity':'-=1'},500,function(){ reload_button.css({'height':'0px'}) });
+                },
+
+                /* compares the values on load to the saved values in order to decide whether to show the message */
+                _compare: function()
+                {
+                    targets.each(
+                        function()
+                        {
+                            var input=$(this);
+
+                            var id=input.attr('id');
+
+                            if ('undefined' != typeof values.saved_vals[id])
+                            {
+                                if (values.on_load_vals[id]!=values.saved_vals[id])
+                                {
+                                    reload_button.css({'display':'block'});
+                                }
+                            }
+                        }
+                    );
+                }
+
+            };
+
+            window.SaveForm = SaveForm;
+
+        }());
+        <?php
+            if (is_numeric($edit_node['id']))
+            {
+                echo "var form_id=".$edit_node['id'].";";
+            }
+            else
+            {
+                echo "var form_id='create_".$type."';";
+            }
+        ?>
+        var saveForm = new window.SaveForm(
+            {
+                input_collection:$('.js-store'),
+                form_id:form_id,
+                reload_button:$('#local_storage_message'),
+                map:map
+            }
+        );
+    </script>
+
+    <?php
 ?>

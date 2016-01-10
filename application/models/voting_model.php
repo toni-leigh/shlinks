@@ -178,6 +178,9 @@
     {
         $vote_buttons="";
 
+        $vote_up=(strlen($this->config->item('vote_up'))) ? $this->config->item('vote_up') : "Vote Up";
+        $vote_down=(strlen($this->config->item('vote_down'))) ? $this->config->item('vote_down') : "Vote Down";
+
         // get the node if this is a cll from js then there will be an id in the node variable
             if (is_numeric($node))
             {
@@ -189,18 +192,18 @@
         // get the current value of the vote
             $vote=$this->get_vote($node['id'],$user['id']);
 
-        // vote down config - some nodes cannot be voted down, meaning the voting system can work as a like system
+        // ".$vote_down." config - some nodes cannot be voted down, meaning the voting system can work as a like system
             $this->load->config('voting');
             $vote_downs=$this->config->item('vote_down_types');
 
         if ($node['user_id']==$user['id'])
         {
             // a user cannot vote for her nodes
-                $vote_buttons.="<span class='cant_vote cant_vote_up sprite' title='cant vote, this is your post'>Vote Up</span>";
+                $vote_buttons.="<span class='cant_vote cant_vote_up sprite' title='cant vote, this is your post'>".$vote_up."</span>";
 
                 if (in_array($node['type'], $vote_downs))
                 {
-                    $vote_buttons.="<span class='cant_vote cant_vote_down sprite' title='cant vote, this is your post'>Vote Down</span>";
+                    $vote_buttons.="<span class='cant_vote cant_vote_down sprite' title='cant vote, this is your post'>".$vote_down."</span>";
                 }
 
         }
@@ -212,32 +215,32 @@
                 if ($vote['vote']<0)
                 {
                     // node is currently voted down
-                        $vote_buttons.="<span id='up".$node['id']."' class='not_voted vote_up sprite'>Vote Up</span>";
+                        $vote_buttons.="<span id='up".$node['id']."' class='not_voted vote_up sprite'>".$vote_up."</span>";
 
                         if (in_array($node['type'], $vote_downs))
                         {
-                            $vote_buttons.="<span id='down".$node['id']."' class='voted_down vote_down sprite'>Vote Down</span>";
+                            $vote_buttons.="<span id='down".$node['id']."' class='voted_down vote_down sprite'>".$vote_down."</span>";
                         }
                 }
                 else
                 {
                     // node is currently voted up
-                        $vote_buttons.="<span id='up".$node['id']."' class='voted_up vote_up sprite'>Vote Up</span>";
+                        $vote_buttons.="<span id='up".$node['id']."' class='voted_up vote_up sprite'>".$vote_up."</span>";
 
                         if (in_array($node['type'], $vote_downs))
                         {
-                            $vote_buttons.="<span id='down".$node['id']."' class='not_voted vote_down sprite'>Vote Down</span>";
+                            $vote_buttons.="<span id='down".$node['id']."' class='not_voted vote_down sprite'>".$vote_down."</span>";
                         }
                 }
             }
             else
             {
                 // neither are voted so both buttons are ready for vote
-                    $vote_buttons.="<span id='up".$node['id']."' class='not_voted vote_up sprite'>Vote Up</span>";
+                    $vote_buttons.="<span id='up".$node['id']."' class='not_voted vote_up sprite'>".$vote_up."</span>";
 
                     if (in_array($node['type'], $vote_downs))
                     {
-                        $vote_buttons.="<span id='down".$node['id']."' class='not_voted vote_down sprite'>Vote Down</span>";
+                        $vote_buttons.="<span id='down".$node['id']."' class='not_voted vote_down sprite'>".$vote_down."</span>";
                     }
             }
         }

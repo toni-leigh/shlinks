@@ -39,7 +39,10 @@
          @param $user - the user who is performing the updated status
          @param $node - the focus of the updated status
          @param $con_type - the type of connection
-         @param $new_status - new status of the connection
+         @param $status - new status of the connection,
+             0 = undone
+             1 = requested
+             2 = accepted (automatic for follows)
     */
     public function add_connection_action($user,$node,$con_type,$status)
     {
@@ -71,9 +74,10 @@
                 if (2==$status)
                 {
                     $this->stream_model->store_action($action_type,$user,$node,$target_owner_id);
-                    if ('user'==$node['type'])
+                    if ('user'==$node['type'] &&
+                        $action_type!=10)
                     {
-                        // an extra one for befriending as this is mutual
+                        // an extra one for befriending as this is mutual, but NOT if it's a follow !
                         $this->stream_model->store_action($action_type,$node,$user,$target_owner_id);
                     }
                 }

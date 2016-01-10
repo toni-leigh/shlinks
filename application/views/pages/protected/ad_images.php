@@ -83,7 +83,7 @@
                     ?>
 
                     // stores the current one for saving values between switches
-                        var current='<?php echo $crop["name"]; ?>';
+                        var current='';
 
                     $(window).load(function () 
                     {
@@ -100,21 +100,40 @@
                         });
                     });
             
-            </script>            
+            </script>        
+            <p>
+                On this screen you can select to crop the image for areas on the 
+                site where it is used.
+            </p>
+            <p> 
+                You can move and stretch the boxes to select the best area of 
+                the image and you can make different selections based on where the
+                image appears on the site (the tabs just above the image)
+            </p>
+            <p>
+                Clicking save without selecting will save the default, centralised
+                crops
+            </p>  
+            <p>
+                Use the text box to name this image if you want to call it something
+                other than it's filename
+            </p>   
             <div align='center'>
                 <?php echo $form['thumbnail_open']; ?>
-                <?php echo $form['image_id']; ?>
                 <?php echo $form['node_id']; ?>
+                <?php echo $form['owning_node_id']; ?>
                     <div id='image_name'>
-                        <span id='image_name_field'>image name / short description:</span>
-                        <input id='iname' class='form_field' type='text' name='image_name' value='<?php echo $default_image_name; ?>' maxlength='140' onkeyup='char_count("iname",140)'/>
-                        <div id='iname_count' class='char_counter chars_ok'></div>
-                        <script type='text/javascript'>
-                            if (window.focus)
-                            {
-                                $('#iname_count').html(140-$('#iname').val().length);
-                            }
-                        </script>
+                        <div class='image_name'>
+                            <input id='iname' class='form_field' type='text' name='image_name' value='<?php echo $default_image_name; ?>' maxlength='140' onkeyup='char_count("iname",140)'/>
+                            <input id='curr_asp' type='hidden' name='curr_asp' value='<?php echo $crop["name"]; ?>'/>
+                            <div id='iname_count' class='char_counter chars_ok'></div>
+                            <script type='text/javascript'>
+                                if (window.focus)
+                                {
+                                    $('#iname_count').html(140-$('#iname').val().length);
+                                }
+                            </script>
+                        </div>
                     </div>
                     <?php
                         if (isset($upload['file_name']))
@@ -125,7 +144,7 @@
                         }
                     ?>
                     <span id='wrong_image'><a href='<?php echo $wrong_image; ?>'>wrong Image ? go back and choose again ... </a></span>
-                    <div class='image_submit'><input class='submit image_submit' type='submit' name='upload_thumbnail' value='Save Image' id='save_thumb_top' /></div>
+                    <!-- <div class='image_submit'><input class='submit image_submit' type='submit' name='upload_thumbnail' value='Save Image' id='save_thumb_top' /></div> -->
                     <div class='image_crop_tabs'>
                         <?php 
                             // for loop here
@@ -170,12 +189,12 @@
                                     .addClass('is_hidden');
 
                             // store this selection in the form
-                                $('#'+current+'_x1').val($('#x1').val());
-                                $('#'+current+'_y1').val($('#y1').val());
-                                $('#'+current+'_x2').val($('#x2').val());
-                                $('#'+current+'_y2').val($('#y2').val());
-                                $('#'+current+'_w').val($('#w').val());
-                                $('#'+current+'_h').val($('#h').val());
+                                $('#'+$('#curr_asp').val()+'_x1').val($('#x1').val());
+                                $('#'+$('#curr_asp').val()+'_y1').val($('#y1').val());
+                                $('#'+$('#curr_asp').val()+'_x2').val($('#x2').val());
+                                $('#'+$('#curr_asp').val()+'_y2').val($('#y2').val());
+                                $('#'+$('#curr_asp').val()+'_w').val($('#w').val());
+                                $('#'+$('#curr_asp').val()+'_h').val($('#h').val());
 
                             // then show the selected one
                                 $('.crop_'+name)
@@ -205,7 +224,7 @@
                                 });
 
                             // set the current value for next switch
-                                current=name;
+                                $('#curr_asp').val(name);
 
                             // set the classes on the tab
                                 $('.crop_tab').removeClass('crop_tab_selected');
@@ -249,7 +268,8 @@
     else
     {
         $this->session->set_userdata('image_admin_reload_source','node_images');
-        if (1==$owns_node)
+        if (1==$owns_node or
+            1==$owns_edit_node)
         {
             ?>
             <div class='panel'>
@@ -270,7 +290,7 @@
         ?>
         <div class='panel'>
             <h2>
-                <span id='current_images_heading' class='ad_heading_text noselect' onclick='close_height("current_images")'>Images Associated With This Node</span>
+                <span id='current_images_heading' class='ad_heading_text noselect' onclick='close_height("current_images")'>Images Associated With <?=$edit_node['name'] ?></span>
                 <span id='current_images_show' class='sprite panel_close noselect' onclick='close_height("current_images")'></span>
             </h2>
             <div id='current_images_panel' class='panel_details image_panel_list'>

@@ -48,6 +48,10 @@
                                 <label for='filter' id='filter_name'>text filter:</label>
                                 <input id='filter' class='form_field' type='text' onkeyup='filter()' autofocus='autofucus'/>
                             </div>
+                            <div class='mine_all'>
+                                <div class='js_show_mine selected show_mine'>show just mine</div>
+                                <div class='js_show_all show_all'>show all site articles</div>
+                            </div>
                             <?php
                                 if (in_array($type,$options['admin_tags']))
                                 {
@@ -142,7 +146,7 @@
                                         $visible_check='';
                                         if (!in_array($type,$options['exclude_visible']))
                                         {
-                                            $visible_check.="<input id='".$jsid."_check' class='ad_nvisible_check' type='checkbox' name='".$id."visible' ".$checked." onclick='set_checked(\"".$jsid."\")'/>";
+                                            $visible_check.="<input id='".$id."_check' class='ad_nvisible_check' type='checkbox' name='".$id."visible' ".$checked." onclick='set_checked(\"".$id."\")'/>";
                                         }
                                         $edit_link='';
                                         if (!in_array($type,$options['exclude_edit']))
@@ -181,10 +185,10 @@
                                         }
 
                                     // output the row
-                                        echo "<div id='".$jsid."' class='ad_npanel ".$ad_class." ".$atag_class_list." row".$id."'>";
+                                        echo "<div id='".$jsid."' class='ad_npanel ".$ad_class." ".$atag_class_list." row".$id."' data-owner-id='".$nodes[$x]['user_id']."'>";
                                         echo "<input type='hidden' name='".$id."_set_node_order' value='".$id."'/>";
                                         echo "<input class='onscreen' type='hidden' name='".$id."onscreen' value='1'/>";
-                                        echo "<input id='".$jsid."visnum' class='visnum' type='hidden' name='".$id."visnum' value='".$nodes[$x]['visible']."'/>";
+                                        echo "<input id='".$id."visnum' class='visnum' type='hidden' name='".$id."visnum' value='".$nodes[$x]['visible']."'/>";
                                         echo $visible_check;
                                         echo "<span class='ad_nname'>";
                                         echo    $name;
@@ -197,7 +201,8 @@
                                         echo    $event_sequence_link;
                                         echo    $view_link;
                                         echo    "<div class='ad_ndelete_space'>";
-                                        if (0==$nodes[$x]['visible'])
+                                        if (0==$nodes[$x]['visible'] &&
+                                            $nodes[$x]['id']!=1)
                                         {
                                             echo    "<a class='ad_ndelete' href='/".$type."/".$id."/delete'>delete</a>";
                                         }
@@ -287,7 +292,7 @@
             // create new node button
                 if (1==$create)
                 {
-                    echo "<a id='create_new_node' class='submit' href='/".$type."/create'>create a new ".$human_type."</a>";
+                    echo "<a class='create_new_node action' href='/".$type."/create'>create a new ".$human_type."</a>";
                 }
         ?>
 

@@ -45,7 +45,7 @@
 
         // Load the file helper and write the file to your server
             $this->load->helper('file');
-            write_file($this->config->item('backup_path'), $backup,'w');
+            write_file($this->config->item('backup_path').date('W',time()).".txt", $backup,'w');
 
         // email the backup as well
             $this->send_email("backups@excitedstatelaboratory.com",

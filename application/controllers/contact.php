@@ -47,7 +47,7 @@
 					{
 						$this->_log_action("contact","contact","fail - bot filled on field");
 					}
-					$this->_reload($contact_page['url'],"please fill in both fields","fail");
+					$this->_reload($contact_page['url'],"please fill in your name and message - contact details are optional but required if you want us to get back in touch","fail");
 			}
 			else
 			{
@@ -80,7 +80,20 @@
 					$em_bod.="NB automated email, please do not reply, use the email address in the message above";
 
 				// send the email
-					$this->send_email($this->config->item('site_email'),"Contact notification email from <".$this->config->item('from_email').">","Contact through your website",$em_bod);
+					$emails=$this->config->item('site_email');
+
+					if (is_array($emails))
+					{
+						foreach ($emails as $email)
+						{
+							$this->send_email($email,"Contact notification email from <".$this->config->item('from_email').">","Contact through your website",$em_bod);
+						}
+					}
+					else
+					{
+						$this->send_email($emails,"Contact notification email from <".$this->config->item('from_email').">","Contact through your website",$em_bod);
+					}
+
 
 				// record the contact
 					$insert_data=array(

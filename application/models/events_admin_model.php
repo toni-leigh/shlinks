@@ -325,7 +325,7 @@
                             $disabled=" disabled='disabled' ";
                         }
                         $ef.="<div id='weekly_repeats' class='repeat_panel' style='".$opacity."'>";
-                        $ef.="<input id='weekly' name='weekly' type='checkbox' value='weekly' ".$checked." onclick='focus_repeat_panel(\"weekly\")'/><label for='weekly'>weekly</label>";
+                        $ef.="<input id='weekly' name='weekly' type='checkbox' value='weekly' ".$checked." onclick='focus_repeat_panel(\"weekly\")'/><label  class='strong' for='weekly'>weekly</label>";
                         foreach ($this->days as $d)
                         {
                             if (isset($event_default["weekly_".$d]) && 'on'==$event_default["weekly_".$d] ? $checked=" checked='checked' " : $checked="" );
@@ -375,7 +375,7 @@
                             $disabled=" disabled='disabled' ";
                         }
                         $ef.="<div id='monthly_repeats' class='repeat_panel' style='".$opacity."'>";
-                        $ef.="<input id='monthly' name='monthly' type='checkbox' value='monthly' ".$checked."onclick='focus_repeat_panel(\"monthly\")'/><label for='monthly'>monthly</label>";
+                        $ef.="<input id='monthly' name='monthly' type='checkbox' value='monthly' ".$checked."onclick='focus_repeat_panel(\"monthly\")'/><label class='strong' for='monthly'>monthly</label>";
                         foreach ($this->monthlies as $m)
                         {
                             if (isset($event_default["monthly_".$m]) && 'on'==$event_default["monthly_".$m] ? $checked=" checked='checked' " : $checked="" );
@@ -1411,14 +1411,15 @@
 			ksort($es);
 
 		// output event sequences
-            $acal="<div class='panel'>";
+            $acal="<div class='panel events_list_panels'>";
             $acal."<div class='calendar_events_list'>";
             $acal.="<h2>";
-            $acal.="<span id='cal_events_heading' class='ad_heading_text noselect' onclick='close_height(\"cal_events\")'>Events On ".$calendar['name']."</span>";
-            $acal.="<span id='cal_events_show' class='sprite panel_close noselect' onclick='close_height(\"cal_events\")'></span>";
+            $acal.="<span id='cal_events_heading' class='ad_heading_text noselect' onclick='open_height(\"cal_events\")'>Events On ".$calendar['name']."</span>";
+            $acal.="<span id='cal_events_show' class='sprite panel_open noselect' onclick='open_height(\"cal_events\")'></span>";
             $acal.="</h2>";
+            $acal.="<div id='cal_events_panel' class='panel_details panel_closed'>";
             $acal.="<span class='js_show_all_events all_event_link'>[show passed events too]</span>";
-            $acal.="<div id='cal_events_panel' class='panel_details'>";
+            $acal.="<div class='cal_events_panel_list'>";
 			foreach ($es as $name=>$details)
 			{
                 $is_hidden=(0==$details['still_active']) ? "class='passed hidden'" : "";
@@ -1428,6 +1429,7 @@
 				$acal.="</span>";
 				$acal.="</a>";
 			}
+            $acal.="</div>";
 			$acal.="</div>";
             $acal.="</div>";
 
@@ -1467,8 +1469,6 @@
             $uf.="<input id='undo_submit' class='undo_submit' type='submit' name='submit' value='undo'/>";
             $uf.="</form>"; */
 
-            $hold_open=0;
-
             // open the panel divs
                 $acal.="<div class='panel all_previous_panel js_event_sweep'>";
                 $acal.="<h2>";
@@ -1480,6 +1480,8 @@
 
 		// build the calendar as an array of months and use the html slider
 			$ps=array();
+
+            $skip_first_close=true;
 
 			//dev_dump($cells);
 			foreach ( $cells as $k=>$v )
@@ -1497,37 +1499,23 @@
 				// a new panel every three months
 					if (in_array($md,array('01-01','04-01','07-01','10-01')))
 					{
-                        // set the hold open variable, holds one full year of three month panels open
-                        // also close the previous panel here too
-                            if (/* date('Y',time())==$key_date[0] &&
-                                ($key_date[1]+2).'31'>date('nd',time()) && */
-                                0==$hold_open)
-                            {
-                                $hold_open=1;
-
-                                $acal.="</div>";
-                                $acal.="</div>";
-                            }
 
                         // this panel is open
-                            if ($hold_open>0)
-                            {
-                                $state='close';
-                                $extra_class='';
+                            $state='open';
+                            $extra_class='panel_closed';
 
-                                $hold_open--;
-                            }
-                            else
-                            {
-                                $state='open';
-                                $extra_class='panel_closed';
-                            }
+                        $now=date('Ymd',time());
+                        $key_plus=$key_date[0].str_pad(($key_date[1]+2), 2, '0', STR_PAD_LEFT).'31';
+                        if ($now>str_replace("-", "", $k) &&
+                            $now<$key_plus)
+                        {
+                            //$acal.=$now."|".$k."|".$key_plus."</div>";
+                            $acal.="</div>";
+                            $acal.="</div>";
 
-                        // unset hold open
-                            if (0==$hold_open)
-                            {
-                                $hold_open=-1;
-                            }
+                            $state='close';
+                            $extra_class='';
+                        }
 
                         // open the panel divs
                             $acal.="<div class='panel js_event_sweep'>";

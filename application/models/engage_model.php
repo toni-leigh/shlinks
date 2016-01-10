@@ -209,17 +209,21 @@ class Engage_model extends Universal_model {
 
 		// email field
 		$attr=array(
+			'id'=>'email',
 			'name'=>'email',
 			'class'=>'form_field',
 			'autofocus'=>'autofocus'
 		);
+		$login_html.="<label for='email'>Email:</label>";
 		$login_html.=form_input($attr,''); // no set_value on email field, for security
 
 		// password field
 		$attr=array(
+			'id'=>'password',
 			'name'=>'password',
 			'class'=>'form_field'
 		);
+		$login_html.="<label for='password'>Password:</label>";
 		$login_html.=form_password($attr,''); // no set_value on password field, for security
 
 		// submit button

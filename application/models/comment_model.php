@@ -51,7 +51,7 @@
 
         $form_html.="<form method='post' action='/comment/save'>";
         $form_html.="<input class='js_node_id' type='hidden' name='node_id' value='".$node['id']."'/>";
-        $form_html.="<textarea id='js_commentfield' class='js_comment comment_field' name='comment' autofocus='autofocus'></textarea>";
+        $form_html.="<textarea id='js_commentfield' class='js_comment comment_field' name='comment'></textarea>";
         $form_html.="<input class='js_comment_submit submit' type='submit' name='submit' value='make comment'/>";
         $form_html.="</form>";
 

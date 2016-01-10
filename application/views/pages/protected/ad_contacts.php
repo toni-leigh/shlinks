@@ -27,8 +27,6 @@
                         
                     // get filter value
                         value=value.replace(/\W/g,'').toLowerCase();
-
-                        console.log(value);
                     
                     // show those that pass the filter
                         $(".contact_list [id*="+value+"]").css('display','block');

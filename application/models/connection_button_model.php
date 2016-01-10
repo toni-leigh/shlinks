@@ -67,108 +67,111 @@
                 //'dev_route'=>'' // shows the route through the if statement
             );
 
-        // if third party node is set then it has to over-ride the user
-        // this is because the user is looking at a list of third party nodes (users) that are associated with her
-        // node and may want to break some of the connections
-        // such a button never appears on a direct user / node relation
-            if (is_array($third_party_node))
-            {
-                $user=$third_party_node;
-            }
+        if (isset($this->user['user_id']))
+        {
+            // if third party node is set then it has to over-ride the user
+            // this is because the user is looking at a list of third party nodes (users) that are associated with her
+            // node and may want to break some of the connections
+            // such a button never appears on a direct user / node relation
+                if (is_array($third_party_node))
+                {
+                    $user=$third_party_node;
+                }
 
-        // only if the node is not the signed in user
-            if ($node['id']!=$user['id'])
-            {
-                // only do these for users and groups
-                    if (in_array($node['type'], array('groupnode','user')))
-                    {
-                        //$buttons['dev_route'].="1|u".$user['id'].";n".$node['id']."|";
-                        // get C type connection
-                            $outgoing=$this->get_connection($user,$node,'C');
-                            $incoming=$this->get_connection($node,$user,'C');
+            // only if the node is not the signed in user
+                if ($node['id']!=$user['id'])
+                {
+                    // only do these for users and groups
+                        if (in_array($node['type'], array('groupnode','user')))
+                        {
+                            //$buttons['dev_route'].="1|u".$user['id'].";n".$node['id']."|";
+                            // get C type connection
+                                $outgoing=$this->get_connection($user,$node,'C');
+                                $incoming=$this->get_connection($node,$user,'C');
 
-                            //$buttons['dev_route'].=$outgoing['status']."|";
-                            //$buttons['dev_route'].=$incoming['status']."|";
+                                //$buttons['dev_route'].=$outgoing['status']."|";
+                                //$buttons['dev_route'].=$incoming['status']."|";
 
-                        // build request related buttons
-                            if ($outgoing['status']<1 && // user has not connected with this node
-                                $incoming['status']<1)
-                            {
-                                //$buttons['dev_route'].="2|";
-                                // request
-                                    $buttons['request']=$this->connection_button('request',$user,$node);
-                            }
-                            else // user has connected with this node
-                            {
-                                //$buttons['dev_route'].="3|";
-                                if (2 == $outgoing['status'] &&
-                                    2 == $incoming['status'])
+                            // build request related buttons
+                                if ($outgoing['status']<1 && // user has not connected with this node
+                                    $incoming['status']<1)
                                 {
-                                    //$buttons['dev_route'].="4|";
-                                    // disconnect
-                                        $buttons['remove']=$this->connection_button('remove',$user,$node);
+                                    //$buttons['dev_route'].="2|";
+                                    // request
+                                        $buttons['request']=$this->connection_button('request',$user,$node);
+                                }
+                                else // user has connected with this node
+                                {
+                                    //$buttons['dev_route'].="3|";
+                                    if (2 == $outgoing['status'] &&
+                                        2 == $incoming['status'])
+                                    {
+                                        //$buttons['dev_route'].="4|";
+                                        // disconnect
+                                            $buttons['remove']=$this->connection_button('remove',$user,$node);
+                                    }
+                                    else
+                                    {
+                                        //$buttons['dev_route'].="5(".$outgoing['status'].")|";
+                                        if (1 == $outgoing['status']) // user has issued a connection request to this node
+                                        {
+                                            //$buttons['dev_route'].="6|";
+                                            // undo request
+                                                $buttons['undo_request']=$this->connection_button('undo_request',$user,$node);
+                                        }
+                                        else if (1 == $incoming['status']) // connection request received from this node or
+                                        {
+                                            //$buttons['dev_route'].="7|";
+                                            // reject request
+                                                $buttons['reject']=$this->connection_button('reject',$user,$node);
+
+                                            // accept request
+                                                $buttons['accept']=$this->connection_button('accept',$user,$node);
+                                        }
+                                    }
+
+                                }
+
+                            // build block buttons
+                                $connection=$this->get_connection($user,$node,'B');
+                                if ($connection['status']>0)
+                                {
+                                    //$buttons['dev_route'].="8|";
+                                    // unblock
+                                        $buttons['unblock']=$this->connection_button('unblock',$user,$node);
                                 }
                                 else
                                 {
-                                    //$buttons['dev_route'].="5(".$outgoing['status'].")|";
-                                    if (1 == $outgoing['status']) // user has issued a connection request to this node
-                                    {
-                                        //$buttons['dev_route'].="6|";
-                                        // undo request
-                                            $buttons['undo_request']=$this->connection_button('undo_request',$user,$node);
-                                    }
-                                    else if (1 == $incoming['status']) // connection request received from this node or
-                                    {
-                                        //$buttons['dev_route'].="7|";
-                                        // reject request
-                                            $buttons['reject']=$this->connection_button('reject',$user,$node);
-
-                                        // accept request
-                                            $buttons['accept']=$this->connection_button('accept',$user,$node);
-                                    }
+                                    //$buttons['dev_route'].="9|";
+                                    // block
+                                        $buttons['block']=$this->connection_button('block',$user,$node);
                                 }
+                        }
 
-                            }
+                    // build follow buttons
+                        $connection=$this->get_connection($user,$node,'F');
+                        if ($connection['status']>0) // user has followed this node
+                        {
+                            //$buttons['dev_route'].="10|";
+                            // unfollow
+                                $buttons['unfollow']=$this->connection_button('unfollow',$user,$node);
+                        }
+                        else // user is not following this node
+                        {
+                            //$buttons['dev_route'].="11|";
+                            // follow
+                                $buttons['follow']=$this->connection_button('follow',$user,$node);
+                        }
 
-                        // build block buttons
-                            $connection=$this->get_connection($user,$node,'B');
-                            if ($connection['status']>0)
-                            {
-                                //$buttons['dev_route'].="8|";
-                                // unblock
-                                    $buttons['unblock']=$this->connection_button('unblock',$user,$node);
-                            }
-                            else
-                            {
-                                //$buttons['dev_route'].="9|";
-                                // block
-                                    $buttons['block']=$this->connection_button('block',$user,$node);
-                            }
-                    }
-
-                // build follow buttons
-                    $connection=$this->get_connection($user,$node,'F');
-                    if ($connection['status']>0) // user has followed this node
-                    {
-                        //$buttons['dev_route'].="10|";
-                        // unfollow
-                            $buttons['unfollow']=$this->connection_button('unfollow',$user,$node);
-                    }
-                    else // user is not following this node
-                    {
-                        //$buttons['dev_route'].="11|";
-                        // follow
-                            $buttons['follow']=$this->connection_button('follow',$user,$node);
-                    }
-
-                    $connection=$this->get_connection($node,$user,'F');
-                    if ($connection['status']>0) // user is followed by this node
-                    {
-                        //$buttons['dev_route'].="12|";
-                        // unfollow
-                            $buttons['unfollowed_by']=$this->connection_button('unfollowed_by',$user,$node);
-                    }
-            }
+                        $connection=$this->get_connection($node,$user,'F');
+                        if ($connection['status']>0) // user is followed by this node
+                        {
+                            //$buttons['dev_route'].="12|";
+                            // unfollow
+                                $buttons['unfollowed_by']=$this->connection_button('unfollowed_by',$user,$node);
+                        }
+                }
+        }
 
         /* BENCHMARK */ $this->benchmark->mark('func_connection_buttons_end');
 
@@ -198,15 +201,21 @@
         // get the config array for button text
             $button_text=$this->config->item('connection_button_text');
 
+        if (isset($button_text[$node['type']][$button_type]) &&
+            $button_text[$node['type']][$button_type]!=null)
+        {
             $text=str_replace("%_NAME", $node['name'], $button_text[$node['type']][$button_type]);
 
-        // build button
-            $cb="";
-            $cb.="<button id='".$js_id."' class='".$button_type." js_connect action button'>";
-            $cb.=$text;
-            $cb.="</button>";
+            // build button
+                $cb="";
+                $cb.="<button id='".$js_id."' class='".$button_type." js_connect action button'>";
+                $cb.=$text;
+                $cb.="</button>";
 
-        return $cb;
+            return $cb;
+        }
+
+        return "";
 
         /* BENCHMARK */ $this->benchmark->mark('func_connection_button_end');
     }

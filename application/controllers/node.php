@@ -57,7 +57,7 @@
 		this can also be the node id if the id retrieves a category for category navigation
 	 return void
 	*/
-	public function display_node($id=6,$url_extra='',$params=array()) // $id=1 ensures the home page is returned regardless of its name when the url is empty
+	public function display_node($id=6,$url_extra='',$params=array()) // $id=6 ensures the home page is returned regardless of its name when the url is empty
 	{
 		/* BENCHMARK */ $this->benchmark->mark('func_view_start');
 

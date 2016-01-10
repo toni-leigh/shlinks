@@ -180,14 +180,12 @@ function set_checked(id)
         if ($('#master_view_check').is(':checked'))
         {
             t.removeClass('ad_ninvisible').addClass('ad_nvisible');
-            console.log(t.find('.ad_nvisible_check').is(':checked'));
             t.find('.visnum').val(1);
             t.find('.ad_nvisible_check').attr('checked',true);
         }
         else
         {
             t.removeClass('ad_nvisible').addClass('ad_ninvisible');
-            console.log(t.find('.ad_nvisible_check').is(':checked'));
             t.find('.visnum').val(0);
             t.find('.ad_nvisible_check').attr('checked',false);
         }
@@ -196,12 +194,12 @@ function set_checked(id)
     {                    
         if ($('#'+id+'_check').is(':checked'))
         {
-            $('#'+id).removeClass('ad_ninvisible').addClass('ad_nvisible');
+            $('.row'+id).removeClass('ad_ninvisible').addClass('ad_nvisible');
             $('#'+id+'visnum').val(1);
         }
         else
         {
-            $('#'+id).removeClass('ad_nvisible').addClass('ad_ninvisible');
+            $('.row'+id).removeClass('ad_nvisible').addClass('ad_ninvisible');
             $('#'+id+'visnum').val(0);
         }
     }

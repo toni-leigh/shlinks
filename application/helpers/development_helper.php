@@ -17,7 +17,7 @@
         {
             if (is_array($argument))
             {
-                echo "<div style='width:95%; float:left; margin-bottom:20px; padding:2%; border:1px solid #4242ff; color:#4242ff; border-radius:2px;'>";
+                echo "<div style='width:95%; float:left; position:relative; background-color:#fff; z-index:1000000; margin-bottom:20px; padding:2%; border:1px solid #4242ff; color:#4242ff; border-radius:2px;'>";
                 if ($query_trigger)
                 {
                     echo "<span class='dd_q_out full_screen_width bold'><strong>".$heading."</strong></span>";
@@ -35,19 +35,19 @@
             {
                 if (is_numeric($argument))
                 {
-                    echo "<div style='width:95%; float:left; margin-bottom:20px; padding:2%;border:1px solid #bf42bf; color:#bf42bf; border-radius:2px;'>";
+                    echo "<div style='width:95%; float:left; position:relative; background-color:#fff; z-index:1000000; margin-bottom:20px; padding:2%;border:1px solid #bf42bf; color:#bf42bf; border-radius:2px;'>";
                     $type='NUMBER';
                 }
                 else
                 {
                     if (is_null($argument))
                     {
-                        echo "<div style='width:95%; float:left; margin-bottom:20px; padding:2%;border:1px solid #ff4242; color:#ff4242; border-radius:2px;'>";
+                        echo "<div style='width:95%; float:left; position:relative; background-color:#fff; z-index:1000000; margin-bottom:20px; padding:2%;border:1px solid #ff4242; color:#ff4242; border-radius:2px;'>";
                         $type='NULL';
                     }
                     else
                     {
-                        echo "<div style='width:95%; float:left; margin-bottom:20px; padding:2%;border:1px solid #428f42; color:#428f42; border-radius:2px;'>";
+                        echo "<div style='width:95%; float:left; position:relative; background-color:#fff; z-index:1000000; margin-bottom:20px; padding:2%;border:1px solid #428f42; color:#428f42; border-radius:2px;'>";
                         $type='STRING / OTHER';
                     }
                 }

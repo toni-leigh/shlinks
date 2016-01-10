@@ -218,3 +218,68 @@ function rp_focus(id,focus)
         $('#'+id).attr('checked',false);
     }
 }
+
+function toggle_events()
+{
+    var passed=$('.passed');
+    var link=$('.js_show_all_events');
+
+    if (passed.first().hasClass('hidden'))
+    {
+        passed.removeClass('hidden');
+        link.html('[hide passed events]');
+    }
+    else
+    {
+        passed.addClass('hidden');
+        link.html('[show passed events too]');
+    }
+}
+$('.js_show_all_events').on('click',toggle_events);
+
+$('.js_event_sweep').each(
+    function()
+    {
+        console.log(0);
+        var panel=$(this);
+
+        var events={};
+
+        panel.find('.cal_cell').each(
+            function()
+            {
+                console.log(1);
+                var cell=$(this);
+
+                var classes=cell.attr('class').split(' ');
+
+                for (x=0;x<classes.length;x++)
+                {
+                    console.log(2);
+                    if (classes[x].indexOf('hl')>-1)
+                    {
+                        if ('undefined'===typeof events[classes[x]])
+                        {
+                            events[classes[x]]={
+                                'count':1,
+                                'hl_class':classes[x]
+                            };
+                        }
+                        else
+                        {
+                            events[classes[x]].count++;
+                        }
+                    }
+                }
+            }
+        );
+
+        for (var event_key in events)
+        {
+            var curr_event=events[event_key];
+            var style="background-color:"+$('#'+curr_event.hl_class).first().css('background-color')+";border:"+$('#'+curr_event.hl_class).first().css('border')+";";
+            panel.find('.sweep_events').append("<span style='"+style+"opacity:0.75;' class='sweep_event "+curr_event.hl_class+"'>"+curr_event.count+"</span>");
+        }
+
+    }
+);

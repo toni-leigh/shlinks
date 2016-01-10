@@ -109,42 +109,47 @@
 
         $count=array();
 
-        if (null==$conversation_id)
+        if (isset($user['user_id']))
         {
-            $query=$this->db
-                ->select(
-                    'count(distinct conversation_id) as "unread"'
-                )
-                ->from(
-                    'message_read'
-                )
-                ->where(
-                    array(
-                        'message_read'=>0,
-                        'user_id'=>$user['id']
+
+            if (null==$conversation_id)
+            {
+                $query=$this->db
+                    ->select(
+                        'count(distinct conversation_id) as "unread"'
                     )
-                );
-            $res=$query->get();
-            $count=$res->row_array();
-        }
-        else
-        {
-            $query=$this->db
-                ->select(
-                    'count(message_id) as "unread"'
-                )
-                ->from(
-                    'message_read'
-                )
-                ->where(
-                    array(
-                        'message_read'=>0,
-                        'user_id'=>$user['id'],
-                        'conversation_id'=>$conversation_id
+                    ->from(
+                        'message_read'
                     )
-                );
-            $res=$query->get();
-            $count=$res->row_array();
+                    ->where(
+                        array(
+                            'message_read'=>0,
+                            'user_id'=>$user['id']
+                        )
+                    );
+                $res=$query->get();
+                $count=$res->row_array();
+            }
+            else
+            {
+                $query=$this->db
+                    ->select(
+                        'count(message_id) as "unread"'
+                    )
+                    ->from(
+                        'message_read'
+                    )
+                    ->where(
+                        array(
+                            'message_read'=>0,
+                            'user_id'=>$user['id'],
+                            'conversation_id'=>$conversation_id
+                        )
+                    );
+                $res=$query->get();
+                $count=$res->row_array();
+            }
+
         }
 
         /* BENCHMARK */ $this->benchmark->mark('func_count_unread_end');
@@ -269,7 +274,7 @@
             $form_html.="<input class='js_user_id' type='hidden' name='user_id' value='".$user['id']."'/>";
         }
         $form_html.="<input class='js_conversation_id' type='hidden' name='conversation_id' value='".$conversation['conversation_id']."'/>";
-        $form_html.="<textarea id='js_commentfield' class='js_message message_field' name='message' autofocus='autofocus'></textarea>";
+        $form_html.="<textarea id='js_commentfield' class='js_message message_field' name='message'></textarea>";
         $form_html.="<input class='js_message_submit submit' type='submit' name='submit' value='send message'/>";
         $form_html.="</form>";
 

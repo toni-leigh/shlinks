@@ -56,51 +56,33 @@
             'blocked_by'=>array()
         );
 
-        $user=$this->user;
-
-        $owns_node=($node['user_id']==$user['id']) ? 1 : 0;
-
-        if ('user'==$node['type'])
+        $owns_node=0;
+        if(isset($this->user))
         {
-            if (1==$owns_node or
-                'super_admin'==$this->user['user_type'])
-            {
-                // requests incoming
-                    $connections['incoming']=$this->get_list($node,'C',1,'in');
-
-                // requests outgoing
-                    $connections['outgoing']=$this->get_list($node,'C',1,'out');
-
-                // blocked
-                    $connections['blocked']=$this->get_list($node,'B',1,'out');
-                    $connections['blocked_by']=$this->get_list($node,'B',1,'in');
-            }
-
-            // friends
-                $connections['connections']=$this->get_list($node,'C',2,'out');
-
-            // follows
-                $connections['follows']=$this->get_list($node,'F',2,'out');
-                $connections['followed_by']=$this->get_list($node,'F',2,'in');
+            $user=$this->user;
+            $owns_node=($node['user_id']==$user['id']) ? 1 : 0;
         }
-        elseif ('groupnode'==$node['type'])
+
+        if (1==$owns_node or
+            'super_admin'==$this->user['user_type'])
         {
-            if (1==$owns_node or
-                'super_admin'==$this->user['user_type'])
-            {
-                // requests incoming
-                    $connections['incoming']=$this->get_list($node,'C',1,'in');
+            // requests incoming
+                $connections['incoming']=$this->get_list($node,'C',1,'in');
 
-                // blocked
-                    $connections['blocked']=$this->get_list($node,'B',1,'out');
-            }
+            // requests outgoing
+                $connections['outgoing']=$this->get_list($node,'C',1,'out');
 
-            // members
-                $connections['connections']=$this->get_list($node,'C',2,'out');
-
-            // follows
-                $connections['followed_by']=$this->get_list($node,'F',2,'in');
+            // blocked
+                $connections['blocked']=$this->get_list($node,'B',1,'out');
+                $connections['blocked_by']=$this->get_list($node,'B',1,'in');
         }
+
+        // friends
+            $connections['connections']=$this->get_list($node,'C',2,'out');
+
+        // follows
+            $connections['follows']=$this->get_list($node,'F',2,'out');
+            $connections['followed_by']=$this->get_list($node,'F',2,'in');
 
         /* BENCHMARK */ $this->benchmark->mark('func_get_connections_end');
 

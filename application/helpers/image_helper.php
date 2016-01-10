@@ -12,6 +12,37 @@
         
         return $pb;        
     }
+
+    /* *************************************************************************
+        image_from_node() - returns a tag for an image or default if it doesn't exist (from the node field)
+        @param $image_path - the path to the image (or a node so type can be used)
+        @param $target_size - target file size
+        @param $resize - the tag resize
+        @return $image_tag - the tag
+    */
+    function image_from_node($image_path,$target_size,$resize)
+    {
+    
+        $image_tag="";
+
+        $type=(is_array($image_path)) ? $image_path['type'] : "";
+        $image=(is_array($image_path)) ? $image_path['image'] : $image_path;
+    
+        if (strlen($image) &&
+            $image!="/img/default_image_stream.png")
+        {
+            $image_tag="<img src='".str_replace("t300.", "t".$target_size.".", $image)."' width='".$resize."' height='".$resize."'/>";
+        }
+        else
+        {
+            $type_path=$_SERVER['DOCUMENT_ROOT']."/img/default_".$type.".png";
+            $path=(is_file($type_path)) ? "/img/default_".$type.".png" : "/img/default_image_stream.png";
+            $image_tag="<img src='".$path."' width='".$resize."' height='".$resize."'/>";
+        }
+    
+        return $image_tag;
+        
+    }
     
     /* *************************************************************************
         image_tag() - gets an image tag holding an image of the correct size
@@ -22,6 +53,8 @@
     */  
     function image_tag($img,$size,$resize=null,$classes='')
     {
+        $img=get_image($img);
+
         // get the dimension values for the image tag
             if (null==$resize)
             {
@@ -68,6 +101,8 @@
     */  
     function thumbnail_tag($img,$size,$resize=null,$classes='')
     {
+        $img=get_image($img);
+
         if (null==$resize)
         {
             $resize=$size;
@@ -79,12 +114,37 @@
     /* *************************************************************************
         thumbnail_url() - gets just the url of a thumbnail
         @param array $img - the image data
-        @param int $size - the size to be used as a choice of file
+        @param int $size - the size to be used as a choice of file, can be an array ordered with the best
+            choice first to help with loading images after size changes
         @return string - the thumbnail url
     */   
     function thumbnail_url($img,$size,$prefix='t')
     {
-        return "/user_img/".$img['user_id']."/".$img['image_filename'].$prefix.$size.$img['image_ext'];
+        $thumbnail_url='';
+        if (is_array($size))
+        {
+            foreach ($size as $s)
+            {
+                $path_suffix="/user_img/".$img['user_id']."/".$img['image_filename'].$prefix.$s.$img['image_ext'];
+                $path=$_SERVER['DOCUMENT_ROOT'].$path_suffix;
+
+                if (is_file($path))
+                {
+                    $thumbnail_url=$path_suffix;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            $path_suffix="/user_img/".$img['user_id']."/".$img['image_filename'].$prefix.$size.$img['image_ext'];
+            $path=$_SERVER['DOCUMENT_ROOT'].$path_suffix;
+            if (is_file($path))
+            {
+                $thumbnail_url=$path_suffix;
+            } 
+        }
+        return $thumbnail_url;
     }
     
     /* *************************************************************************

@@ -16847,3 +16847,1996 @@ DEBUG - 2016-01-10 10:36:57 --> File loaded: application/views/template/map.php
 DEBUG - 2016-01-10 10:36:57 --> File loaded: application/views/template/page_close.php
 DEBUG - 2016-01-10 10:36:57 --> Final output sent to browser
 DEBUG - 2016-01-10 10:36:57 --> Total execution time: 0.1666
+DEBUG - 2016-01-10 12:12:15 --> Config Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:12:15 --> URI Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Router Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Output Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Security Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Input Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:15 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:15 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:15 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:12:15 --> Language Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:12:15 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:12:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:12:15 --> Session Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:12:15 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Session routines successfully run
+DEBUG - 2016-01-10 12:12:15 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:15 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:15 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:12:15 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/pages/links.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:12:15 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:12:15 --> Final output sent to browser
+DEBUG - 2016-01-10 12:12:15 --> Total execution time: 0.2302
+DEBUG - 2016-01-10 12:12:22 --> Config Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:12:22 --> URI Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Router Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Output Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Security Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Input Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:12:22 --> Language Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:12:22 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:12:22 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:12:22 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:12:22 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:12:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:12:22 --> Session Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:12:22 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Session routines successfully run
+DEBUG - 2016-01-10 12:12:22 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:12:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:23 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:23 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/node_element/category/links.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:12:23 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:12:23 --> Final output sent to browser
+DEBUG - 2016-01-10 12:12:23 --> Total execution time: 0.1986
+DEBUG - 2016-01-10 12:12:24 --> Config Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:12:24 --> URI Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Router Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Output Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Security Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Input Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:24 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:24 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:24 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:12:24 --> Language Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:12:24 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:12:24 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:12:24 --> Session Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:12:24 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Session routines successfully run
+DEBUG - 2016-01-10 12:12:24 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:24 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:24 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:12:24 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/pages/link_form.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:12:24 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:12:24 --> Final output sent to browser
+DEBUG - 2016-01-10 12:12:24 --> Total execution time: 0.1229
+DEBUG - 2016-01-10 12:12:30 --> Config Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:12:30 --> URI Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Router Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Output Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Security Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Input Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:12:30 --> Language Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:12:30 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:12:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:12:30 --> Session Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:12:30 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Session routines successfully run
+DEBUG - 2016-01-10 12:12:30 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Config file loaded: application/config/action.php
+ERROR - 2016-01-10 12:12:30 --> { user_id:1 , user_name:tonileigh , action:The link has been successfully edited , outcome:success , url:article_link/edit/1730 } , 
+DEBUG - 2016-01-10 12:12:30 --> Config Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:12:30 --> URI Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Router Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Output Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Security Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Input Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:12:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:12:30 --> Language Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:12:30 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:12:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:12:30 --> Session Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:12:30 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Session routines successfully run
+DEBUG - 2016-01-10 12:12:30 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:30 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:12:30 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:12:30 --> Model Class Initialized
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/pages/link_form.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:12:30 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:12:30 --> Final output sent to browser
+DEBUG - 2016-01-10 12:12:30 --> Total execution time: 0.1304
+ERROR - 2016-01-10 12:32:06 --> Severity: Notice  --> Only variable references should be returned by reference /Applications/MAMP/htdocs/shlinks/dev/system/core/Common.php 243
+DEBUG - 2016-01-10 12:32:06 --> Config Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:32:06 --> URI Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Router Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Output Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Security Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Input Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:32:06 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:32:06 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:32:06 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:32:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:32:06 --> Language Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:32:06 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:32:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:32:06 --> Session Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:32:06 --> Encrypt Class Initialized
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+DEBUG - 2016-01-10 12:32:06 --> Session routines successfully run
+DEBUG - 2016-01-10 12:32:06 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:32:06 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:32:06 --> Helper loaded: cookie_helper
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> in_array() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/shlinks/dev/application/models/data_array_model.php 321
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:32:06 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:32:06 --> Model Class Initialized
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/pages/link_form.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:32:06 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:32:06 --> Final output sent to browser
+DEBUG - 2016-01-10 12:32:06 --> Total execution time: 0.1998
+DEBUG - 2016-01-10 12:33:25 --> Config Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:33:25 --> URI Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Router Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Output Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Security Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Input Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:25 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:25 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:25 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:33:25 --> Language Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:33:25 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:33:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:33:25 --> Session Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:33:25 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Session routines successfully run
+DEBUG - 2016-01-10 12:33:25 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:33:25 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:25 --> Final output sent to browser
+DEBUG - 2016-01-10 12:33:25 --> Total execution time: 0.0977
+DEBUG - 2016-01-10 12:33:34 --> Config Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:33:34 --> URI Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Router Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Output Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Security Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Input Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:34 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:34 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:34 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:33:34 --> Language Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:33:34 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:33:34 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:33:34 --> Session Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:33:34 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Session routines successfully run
+DEBUG - 2016-01-10 12:33:34 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:33:34 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:34 --> Final output sent to browser
+DEBUG - 2016-01-10 12:33:34 --> Total execution time: 0.0612
+DEBUG - 2016-01-10 12:33:58 --> Config Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:33:58 --> URI Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Router Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Output Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Security Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Input Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:58 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:58 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:58 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:33:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:33:58 --> Language Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:33:58 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:33:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:33:58 --> Session Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:33:58 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Session routines successfully run
+DEBUG - 2016-01-10 12:33:58 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:33:58 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Model Class Initialized
+DEBUG - 2016-01-10 12:33:58 --> Final output sent to browser
+DEBUG - 2016-01-10 12:33:58 --> Total execution time: 0.0624
+ERROR - 2016-01-10 12:34:07 --> Severity: Notice  --> Only variable references should be returned by reference /Applications/MAMP/htdocs/shlinks/dev/system/core/Common.php 243
+DEBUG - 2016-01-10 12:34:07 --> Config Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:34:07 --> URI Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Router Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Output Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Security Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Input Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:34:07 --> Language Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:34:07 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:34:07 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:34:07 --> Session Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:34:07 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Session routines successfully run
+DEBUG - 2016-01-10 12:34:07 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:34:07 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:07 --> Final output sent to browser
+DEBUG - 2016-01-10 12:34:07 --> Total execution time: 0.0574
+ERROR - 2016-01-10 12:34:13 --> Severity: Notice  --> Only variable references should be returned by reference /Applications/MAMP/htdocs/shlinks/dev/system/core/Common.php 243
+DEBUG - 2016-01-10 12:34:13 --> Config Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:34:13 --> URI Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Router Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> No URI present. Default controller set.
+DEBUG - 2016-01-10 12:34:13 --> Output Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Security Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Input Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:13 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:13 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:13 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:34:13 --> Language Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:34:13 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:34:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:34:13 --> Session Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:34:13 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Session routines successfully run
+DEBUG - 2016-01-10 12:34:13 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:13 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:13 --> Helper loaded: cookie_helper
+ERROR - 2016-01-10 12:34:13 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:34:13 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:34:13 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:34:13 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:34:13 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/pages/protected/login.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:34:13 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:34:13 --> Final output sent to browser
+DEBUG - 2016-01-10 12:34:13 --> Total execution time: 0.1057
+DEBUG - 2016-01-10 12:34:21 --> Config Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:34:21 --> URI Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Router Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> No URI present. Default controller set.
+DEBUG - 2016-01-10 12:34:21 --> Output Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Security Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Input Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:21 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:21 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:21 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:21 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:21 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:34:21 --> Language Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:34:21 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:34:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:34:21 --> Session Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:34:21 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Session routines successfully run
+DEBUG - 2016-01-10 12:34:21 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:21 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:21 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/pages/protected/login.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:34:21 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:34:21 --> Final output sent to browser
+DEBUG - 2016-01-10 12:34:21 --> Total execution time: 0.0985
+DEBUG - 2016-01-10 12:34:22 --> Config Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:34:22 --> URI Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Router Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Output Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Security Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Input Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:34:22 --> Language Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:34:22 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:34:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:34:22 --> Session Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:34:22 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Session routines successfully run
+DEBUG - 2016-01-10 12:34:22 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: email_helper
+DEBUG - 2016-01-10 12:34:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:22 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: url_helper
+ERROR - 2016-01-10 12:34:22 --> { user_id: , user_name: , action:login , outcome:success , url: } , 
+DEBUG - 2016-01-10 12:34:22 --> Config Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:34:22 --> URI Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Router Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Output Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Security Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Input Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:34:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:34:22 --> Language Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:34:22 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:34:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:34:22 --> Session Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:34:22 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Session routines successfully run
+DEBUG - 2016-01-10 12:34:22 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:22 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:34:22 --> Helper loaded: cookie_helper
+ERROR - 2016-01-10 12:34:22 --> Severity: Warning  --> in_array() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/shlinks/dev/application/models/data_array_model.php 321
+ERROR - 2016-01-10 12:34:22 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:34:22 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:34:22 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:34:22 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:34:23 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/node_element/user/all.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:34:24 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:34:24 --> Final output sent to browser
+DEBUG - 2016-01-10 12:34:24 --> Total execution time: 1.1607
+DEBUG - 2016-01-10 12:35:12 --> Config Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:35:12 --> URI Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Router Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Output Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Security Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Input Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:12 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:12 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:12 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:12 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:12 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:35:12 --> Language Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:35:12 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:35:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:35:12 --> Session Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:35:12 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Session garbage collection performed.
+DEBUG - 2016-01-10 12:35:12 --> Session routines successfully run
+DEBUG - 2016-01-10 12:35:12 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:12 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:12 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:12 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/node_element/user/all.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:35:13 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:35:13 --> Final output sent to browser
+DEBUG - 2016-01-10 12:35:13 --> Total execution time: 1.2045
+DEBUG - 2016-01-10 12:35:16 --> Config Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:35:16 --> URI Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Router Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Output Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Security Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Input Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:16 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:16 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:16 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:16 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:16 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:35:16 --> Language Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:35:16 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:35:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:35:16 --> Session Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:35:16 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Session routines successfully run
+DEBUG - 2016-01-10 12:35:16 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:16 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:16 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:35:16 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/pages/link_form.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:35:16 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:35:16 --> Final output sent to browser
+DEBUG - 2016-01-10 12:35:16 --> Total execution time: 0.1216
+DEBUG - 2016-01-10 12:35:22 --> Config Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:35:22 --> URI Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Router Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Output Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Security Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Input Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:22 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:35:22 --> Language Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:35:22 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:35:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:35:22 --> Session Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:35:22 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Session routines successfully run
+DEBUG - 2016-01-10 12:35:22 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:22 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:22 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:35:22 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/pages/links.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:35:22 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:35:22 --> Final output sent to browser
+DEBUG - 2016-01-10 12:35:22 --> Total execution time: 0.1142
+DEBUG - 2016-01-10 12:35:39 --> Config Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:35:39 --> URI Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Router Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Output Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Security Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Input Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:39 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:39 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:39 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:39 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:39 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:35:39 --> Language Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:35:39 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:35:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:35:39 --> Session Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:35:39 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Session routines successfully run
+DEBUG - 2016-01-10 12:35:39 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:35:39 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:39 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:35:39 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:40 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:35:40 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:40 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:40 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:40 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:35:40 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:40 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:35:40 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:40 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/node_element/category/links.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:35:40 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:35:40 --> Final output sent to browser
+DEBUG - 2016-01-10 12:35:40 --> Total execution time: 0.1182
+DEBUG - 2016-01-10 12:35:44 --> Config Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:35:44 --> URI Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Router Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Output Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Security Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Input Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:44 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:44 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:44 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:44 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:44 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:35:44 --> Language Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:35:44 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:35:44 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:35:44 --> Session Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:35:44 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Session routines successfully run
+DEBUG - 2016-01-10 12:35:44 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:44 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:35:44 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:35:44 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/pages/link_form.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:35:44 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:35:44 --> Final output sent to browser
+DEBUG - 2016-01-10 12:35:44 --> Total execution time: 0.1145
+DEBUG - 2016-01-10 12:35:55 --> Config Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:35:55 --> URI Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Router Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Output Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Security Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Input Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:35:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:35:55 --> Language Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:35:55 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:35:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:35:55 --> Session Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:35:55 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Session routines successfully run
+DEBUG - 2016-01-10 12:35:55 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:35:55 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Model Class Initialized
+DEBUG - 2016-01-10 12:35:55 --> Config file loaded: application/config/action.php
+ERROR - 2016-01-10 12:35:55 --> Severity: Notice  --> Undefined index: video_src /Applications/MAMP/htdocs/shlinks/dev/application/models/node_admin_model.php 230
+ERROR - 2016-01-10 12:35:55 --> { user_id:1 , user_name:tonileigh , action:The link has been successfully edited , outcome:success , url:article_link/edit/1912 } , 
+ERROR - 2016-01-10 12:35:55 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/system/libraries/Session.php 672
+ERROR - 2016-01-10 12:35:55 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/shlinks/dev/system/core/Exceptions.php:170) /Applications/MAMP/htdocs/shlinks/dev/application/controllers/universal.php 168
+DEBUG - 2016-01-10 12:36:23 --> Config Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:36:23 --> URI Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Router Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Output Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Security Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Input Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:36:23 --> Language Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:36:23 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:36:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:36:23 --> Session Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:36:23 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Session routines successfully run
+DEBUG - 2016-01-10 12:36:23 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Config file loaded: application/config/action.php
+ERROR - 2016-01-10 12:36:23 --> { user_id:1 , user_name:tonileigh , action:The link has been successfully edited , outcome:success , url:article_link/edit/1912 } , 
+DEBUG - 2016-01-10 12:36:23 --> Config Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:36:23 --> URI Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Router Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Output Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Security Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Input Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:36:23 --> Language Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:36:23 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:36:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:36:23 --> Session Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:36:23 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Session routines successfully run
+DEBUG - 2016-01-10 12:36:23 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:36:23 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:36:23 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:36:23 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/node_tabs.php
+ERROR - 2016-01-10 12:36:23 --> Severity: Notice  --> Undefined variable: cat_counted2 /Applications/MAMP/htdocs/shlinks/dev/application/views/pages/link_form.php 23
+ERROR - 2016-01-10 12:36:23 --> Severity: Notice  --> Undefined variable: cat_counted3 /Applications/MAMP/htdocs/shlinks/dev/application/views/pages/link_form.php 25
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/pages/link_form.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:36:23 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:36:23 --> Final output sent to browser
+DEBUG - 2016-01-10 12:36:23 --> Total execution time: 0.1283
+DEBUG - 2016-01-10 12:36:27 --> Config Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:36:27 --> URI Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Router Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Output Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Security Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Input Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:27 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:27 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:27 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:27 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:27 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:36:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:36:27 --> Language Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:36:27 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:36:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:36:27 --> Session Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:36:27 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Session routines successfully run
+DEBUG - 2016-01-10 12:36:27 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:36:27 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:36:27 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:36:27 --> Model Class Initialized
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/pages/links.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:36:27 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:36:27 --> Final output sent to browser
+DEBUG - 2016-01-10 12:36:27 --> Total execution time: 0.1126
+DEBUG - 2016-01-10 12:38:00 --> Config Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:38:00 --> URI Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Router Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Output Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Security Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Input Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:00 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:00 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:00 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:00 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:00 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:38:00 --> Language Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:38:00 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:38:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:38:00 --> Session Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:38:00 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Session routines successfully run
+DEBUG - 2016-01-10 12:38:00 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:00 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:00 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:38:00 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/pages/links.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:38:00 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:38:00 --> Final output sent to browser
+DEBUG - 2016-01-10 12:38:00 --> Total execution time: 0.1703
+DEBUG - 2016-01-10 12:38:01 --> Config Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:38:01 --> URI Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Router Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Output Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Security Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Input Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:01 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:01 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:01 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:01 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:01 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:38:01 --> Language Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:38:01 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:38:01 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:38:01 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:38:01 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:38:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:38:01 --> Session Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:38:01 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Session routines successfully run
+DEBUG - 2016-01-10 12:38:01 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:01 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:02 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:02 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:02 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/node_element/user/all.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:38:03 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:38:03 --> Final output sent to browser
+DEBUG - 2016-01-10 12:38:03 --> Total execution time: 1.3218
+DEBUG - 2016-01-10 12:38:04 --> Config Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:38:04 --> URI Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Router Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Output Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Security Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Input Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:04 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:04 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:04 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:04 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:04 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:38:04 --> Language Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:38:04 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:38:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:38:04 --> Session Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:38:04 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Session routines successfully run
+DEBUG - 2016-01-10 12:38:04 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:38:04 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:04 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:05 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:05 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:05 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/header_close.php
+ERROR - 2016-01-10 12:38:06 --> Severity: Notice  --> Undefined variable: all_sel /Applications/MAMP/htdocs/shlinks/dev/application/views/template/content_open.php 31
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/node_element/user/links.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:38:06 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:38:06 --> Final output sent to browser
+DEBUG - 2016-01-10 12:38:06 --> Total execution time: 1.1023
+DEBUG - 2016-01-10 12:38:07 --> Config Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:38:07 --> URI Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Router Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Output Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Security Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Input Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:07 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:38:07 --> Language Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:38:07 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:38:07 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:38:07 --> Session Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:38:07 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Session routines successfully run
+DEBUG - 2016-01-10 12:38:07 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:07 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:07 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/header_close.php
+ERROR - 2016-01-10 12:38:07 --> Severity: Notice  --> Undefined variable: all_sel /Applications/MAMP/htdocs/shlinks/dev/application/views/template/content_open.php 31
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/node_element/user/votes.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:38:07 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:38:07 --> Final output sent to browser
+DEBUG - 2016-01-10 12:38:07 --> Total execution time: 0.1354
+DEBUG - 2016-01-10 12:38:08 --> Config Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Hooks Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Utf8 Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> UTF-8 Support Enabled
+DEBUG - 2016-01-10 12:38:08 --> URI Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Router Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Output Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Security Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Input Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:08 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:08 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:08 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:08 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:08 --> XSS Filtering completed
+DEBUG - 2016-01-10 12:38:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2016-01-10 12:38:08 --> Language Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Loader Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: cache_helper
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: development_helper
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: image_helper
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: layout_helper
+DEBUG - 2016-01-10 12:38:08 --> Database Driver Class Initialized
+ERROR - 2016-01-10 12:38:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/shlinks/dev/system/database/drivers/mysql/mysql_driver.php 88
+DEBUG - 2016-01-10 12:38:08 --> Session Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: string_helper
+DEBUG - 2016-01-10 12:38:08 --> Encrypt Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Session routines successfully run
+DEBUG - 2016-01-10 12:38:08 --> Controller Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: database_to_html_helper
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: form_helper
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: html_helper
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: date_convert_helper
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: data_helper
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: security_helper
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: url_helper
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:08 --> Cart Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: date_helper
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Cart class already loaded. Second attempt ignored.
+DEBUG - 2016-01-10 12:38:08 --> Helper loaded: cookie_helper
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Config file loaded: application/config/voting.php
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:08 --> Model Class Initialized
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/head_open.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/head_close.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/page_open.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/admin_nav.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/header_open.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/header_close.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/content_open.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/node_tabs.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/links.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/node_element/user/all.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/content_close.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/footer_open.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/footer_close.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/map.php
+DEBUG - 2016-01-10 12:38:09 --> File loaded: application/views/template/page_close.php
+DEBUG - 2016-01-10 12:38:09 --> Final output sent to browser
+DEBUG - 2016-01-10 12:38:09 --> Total execution time: 1.1166

@@ -50,6 +50,14 @@
 				$data['ga']="<script type='text/javascript'>var _gaq = _gaq || [];_gaq.push(['_setAccount', '".$this->config->item('ga')."']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>";
 			}
 
+		// NODE CREATOR
+			$creator=array();
+			if(isset($node['user_id']))
+			{
+				$creator=$this->node_model->get_node($node['user_id'],'user');
+			}
+			$data['creator']=$creator;
+
 		// HEAD INCLUDES
 			$data['css']=css_files($data['admin_page']);
 
@@ -724,15 +732,29 @@
 				switch ($panel)
 				{
 					case 'articles':
-						$articles=$this->node_model->get_nodes(array('type'=>'blog','user_id'=>$node['id'],'visible'=>1),1);
+					case 'blog':
+						$articles=$this->node_model->get_nodes(array('type'=>'article','user_id'=>$node['id'],'visible'=>1),1);
 						break;
+					case 'calendar':
+						$calendar=array();
+						$calendars=$this->node_model->get_nodes(array('type'=>'calendar','user_id'=>$node['id']));
+						if (count($calendars)>0)
+						{
+							$this->load->model('events_model');
+							$calendar=$this->node_model->get_node($calendars[0]['id'],'calendar');
+							$calendar=$this->events_model->get_calendar($calendar,$node['url']."/calendar",$data['params']);
+						}
+						$data['calendar']=$calendar;
 					case 'comments':
+					case 'details':
+					case 'intro':
 						$this->load->model('comment_model');
 						$comments=$this->comment_model->get_comments($node);
 						$comment_form=$this->comment_model->comment_form($node);
 						$data['javascript'].="<script src='/js/comments.js'></script>";
 						$data['javascript'].="<script type='text/javascript' src='/js/tinymce/tiny_mce.js'></script>";
 					case 'images':
+					case 'gallery':
 						$images=$this->image_model->get_images($node['id']);
 						break;
 					case 'messages':
@@ -771,6 +793,12 @@
 											'conversation_id'=>0
 										);
 									}
+
+									if (count($conversation)>0)
+									{
+										$messages=$this->message_model->get_conversation_messages($user,$conversation);
+									}
+
 									$message_form=$this->message_model->message_form($conversation,$node);
 							}
 							$data['javascript'].="<script src='/js/messages.js'></script>";
@@ -779,6 +807,7 @@
 						}
 						break;
 					case 'stream':
+					case 'activity':
 						// stream model is also used below to merge streams for users
 							$this->load->model('stream_output_model');
 
@@ -822,7 +851,13 @@
 
 										$count_unread=$this->message_model->count_unread($user);
 
-										$tab_text=$data['tabs'][$x]." [".$count_unread['unread']."]";
+										$suffix='';
+										if (isset($count_unread['unread']))
+										{
+											$suffix=" [".$count_unread['unread']."]";
+										}
+
+										$tab_text=$data['tabs'][$x].$suffix;
 									}
 									else
 									{
@@ -857,8 +892,10 @@
 
 		// specific to node type, such as add to basket, variations and user connection stuff
 			// CALENDAR
-				$calendar="";
-
+				if (!isset($calendar))
+				{
+					$calendar='';
+				}
 				if ('calendar'==$node['type'])
 				{
 					$this->load->model('events_model');
@@ -1017,10 +1054,9 @@
 			// USER AND GROUP
 				$data['connection_buttons']=array();
 				$followable=$this->config->item('followable');
-				if (isset($this->user['user_id']) &&
-					('user'==$node['type'] or
+				if ('user'==$node['type'] or
 					'groupnode'==$node['type'] or
-					(is_array($followable) && in_array($node['type'], $followable))))
+					(is_array($followable) && in_array($node['type'], $followable)))
 				{
 					$this->load->model('connection_model');
 					$this->load->model('connection_button_model');
@@ -1029,12 +1065,15 @@
 						$data['connections']=$this->connection_model->get_connections($node);
 
 					// connection buttons
-						$data['connection_buttons']=$this->connection_button_model->connection_buttons($user,$node);
+						if (isset($this->user['user_id']))
+						{
+							$data['connection_buttons']=$this->connection_button_model->connection_buttons($user,$node);
+						}
 				}
 
 				// friends stream data
 					if ('user'==$node['type'] && // this is a user
-						'stream'==$panel) // and we are looking at the panel
+						in_array($panel, array('stream','activity'))) // and we are looking at the panel
 					{
 					}
 

@@ -128,7 +128,7 @@
             <?php
                 foreach ($head_views as $hv)
                 {
-                    $view_name=str_replace('template/','',$hv['view']);
+                    $view_name=str_replace('template/node/','',$hv['view']);
                     echo "<code id='".$view_name."' class='man_view'>";
 
                     echo "<h3>".$hv['view']."</h3>";
@@ -141,7 +141,7 @@
 
                     $f=htmlentities($f);
 
-                    if ('template/admin_nav'==$hv['view'])
+                    if ('template/node/admin_nav'==$hv['view'])
                     {
                         echo "admin nav items condensed";
                     }
@@ -167,7 +167,7 @@
 
                 foreach ($footer_views as $fv)
                 {
-                    $view_name=str_replace('template/','',$fv['view']);
+                    $view_name=str_replace('template/node/','',$fv['view']);
                     echo "<div id='".$view_name."' class='man_view'>";
 
                     echo "<h3>".$fv['view']."</h3>";

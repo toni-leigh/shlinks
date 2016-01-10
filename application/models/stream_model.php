@@ -83,7 +83,13 @@
         // get the correct score for this actor
             $actor['score_adjust']=$this->score_model->get_score('actor_score',$action_code,$target);
 
-            $this->score_model->update_score($actor,$actor['score_adjust']);
+            if ($action_code!=0 &&
+                $target['visible']!=0)
+            {
+                // don't score if create action, mass visible setting adjusts score
+                // also if the node is invisible don't score either for same reason
+                $this->score_model->update_score($actor,$actor['score_adjust']);
+            }
 
         /* add the event into a table called action */
             $insert_data=array(

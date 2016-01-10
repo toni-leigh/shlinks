@@ -27,7 +27,7 @@ class Image_model extends Universal_model {
     public function get_images($id,$single=0)
     {
         $this->load->model('node_model');
-        $images=$this->node_model->get_nodes(array('type'=>'image','owning_node_id'=>$id),1);
+        $images=$this->node_model->get_nodes(array('type'=>'image','owning_node_id'=>$id),1,'main desc');
 
         return $images;
     }
