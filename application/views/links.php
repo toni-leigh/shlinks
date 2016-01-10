@@ -14,10 +14,10 @@
 
             // filter id
                 $filter_id=preg_replace("/[^\da-z]/i", "",strtolower($panel['name']." ".$panel['tags']." ".$panel['user_name']." ".$cat_names));
-            
+
             // open panels
                 echo "<div id='".$filter_id."' class='".$panel['type']."_panel panel' itemprop='itemListElement' itemscope itemtype='http://schema.org/CreativeWork'>";
-            
+
             // common
                 echo "<div class='details_left'>";
                 if (0===strpos($panel['url'], "http") ? $url=$panel['url'] : $url="http://".$panel['url'] );
@@ -28,7 +28,7 @@
                 }
                 if ($user['id']!=$panel['user_id'])
                 {
-                    echo "<a class='posted_by' href='/".$panel['user_id']."'>".$panel['user_name']."</a>";
+                    echo "<a class='posted_by' href='/".$panel['user_id']."/links'>".$panel['user_name']."</a>";
                 }
 
                 if (count($panel['other_cats']))
@@ -56,7 +56,7 @@
                 {
                     echo "<span class='score".$panel['id']." score' style='color:rgba(".$panel['score_data']['font']['red'].",".$panel['score_data']['font']['green'].",".$panel['score_data']['font']['blue'].",1);border:1px solid rgba(".$panel['score_data']['bg']['red'].",".$panel['score_data']['bg']['green'].",".$panel['score_data']['bg']['blue'].",1);background-color:rgba(".$panel['score_data']['bg']['red'].",".$panel['score_data']['bg']['green'].",".$panel['score_data']['bg']['blue'].",0.25)'>".$panel['score_data']['points']."</span>";
                 }
-                
+
                 if ('blog'==$panel['type'])
                 {
                     // author and date
@@ -70,11 +70,11 @@
                 {
                     echo "<div class='list_images' itemprop='image' itemscope itemtype='http://schema.org/ImageGallery'>".$panel['images']."</div>";
                 }
-                
+
             // close panel
                 echo "</div>";
         }
-        
+
     }
 ?>
 
@@ -91,10 +91,10 @@
             url: '/voting/up',
             dataType: 'json',
             data: { nid:id },
-            success: function (new_html) 
-            { 
-                $(".votes"+new_html[0]).html(new_html[1]); 
-                $(".score"+new_html[0]).html(new_html[2]); 
+            success: function (new_html)
+            {
+                $(".votes"+new_html[0]).html(new_html[1]);
+                $(".score"+new_html[0]).html(new_html[2]);
                 $('.vote_up').on('click',vote_down);
             }
         });
@@ -102,16 +102,16 @@
     function vote_down()
     {
         var id=this.id.replace('down','');
-        
+
         $.ajax({
             type:'GET',
             url: '/voting/down',
             dataType: 'json',
             data: { nid:id },
-            success: function (new_html) 
-            { 
-                $(".votes"+new_html[0]).html(new_html[1]); 
-                $(".score"+new_html[0]).html(new_html[2]); 
+            success: function (new_html)
+            {
+                $(".votes"+new_html[0]).html(new_html[1]);
+                $(".score"+new_html[0]).html(new_html[2]);
                 $('.vote_up').on('click',vote_up);
             }
         });
@@ -130,10 +130,10 @@
                 url: '/voting/down',
                 dataType: 'json',
                 data: { nid:id },
-                success: function (new_html) 
-                { 
-                    $(".votes"+new_html[0]).html(new_html[1]); 
-                    $(".score"+new_html[0]).html(new_html[2]); 
+                success: function (new_html)
+                {
+                    $(".votes"+new_html[0]).html(new_html[1]);
+                    $(".score"+new_html[0]).html(new_html[2]);
                     $('.vote_up').on('click',vote);
                 }
             });
@@ -145,10 +145,10 @@
                 url: '/voting/up',
                 dataType: 'json',
                 data: { nid:id },
-                success: function (new_html) 
-                { 
-                    $(".votes"+new_html[0]).html(new_html[1]); 
-                    $(".score"+new_html[0]).html(new_html[2]); 
+                success: function (new_html)
+                {
+                    $(".votes"+new_html[0]).html(new_html[1]);
+                    $(".score"+new_html[0]).html(new_html[2]);
                     $('.vote_up').on('click',vote);
                 }
         });
