@@ -34,6 +34,18 @@
 
         // output order, set by user type
             $data['output_order']=array(
+                'anon_user'=>array(
+                    1748,
+                    1746,
+                    1745,
+                    1019,
+                    1749,
+                    1750,
+                    1055,
+                    1004,
+                    1798,
+                    1045
+                ),
                 'developer'=>array(
                     1748,
                     1746,
@@ -98,6 +110,18 @@
 
         // open ones - the first two
             $open_ones=array(
+                'anon_user'=>array(
+                    1748,
+                    1746,
+                    1745,
+                    1019,
+                    1749,
+                    1750,
+                    1004,
+                    1798,
+                    1055,
+                    1045
+                ),
                 'developer'=>array(
                     1748,
                     1746,
@@ -544,7 +568,10 @@
                 $nl[$x]['score_data']['font']['blue']=$font['blue'];
 
             // button state
-                $nl[$x]['vote_buttons']=$this->voting_model->get_vote_buttons($this->user,$nl[$x]);
+                if (isset($this->user['id']))
+                {
+                    $nl[$x]['vote_buttons']=$this->voting_model->get_vote_buttons($this->user,$nl[$x]);
+                }
         }
 
         return $nl;

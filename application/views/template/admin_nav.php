@@ -52,13 +52,20 @@ echo "<div id='centre_admin_nav'>";
         }
 
     // add link form
-        echo form_open('/article_link/add');
-        ?>
-            <input id='url_submit' class='submit' type='submit' value='add'/>
-            <input id='url_field' type='text' name='new_url' value='' autofocus='autofocus' placeholder='url here and click add to scrape'/>
-
-        </form>
-        <?php
+        if (isset($user['id']))
+        {
+            echo form_open('/article_link/add');
+            ?>
+                <input id='url_submit' class='submit' type='submit' value='add'/>
+                <input id='url_field' type='text' name='new_url' value='' autofocus='autofocus' placeholder='url here and click add to scrape'/>
+            </form>
+            <?php
+        }
+        else
+        {
+            echo "<a class='adnav register-link' href='/register'>Register</a>";
+            echo "<a class='adnav register-link' href='/login'>Login</a>";
+        }
 
 echo "</div>";
 echo "</div>";
