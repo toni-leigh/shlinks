@@ -544,7 +544,7 @@
                 $nl[$x]['score_data']['font']['blue']=$font['blue'];
 
             // button state
-                $nl[$x]['vote_buttons']=$this->voting_model->get_vote_buttons($nl[$x],$this->user);
+                $nl[$x]['vote_buttons']=$this->voting_model->get_vote_buttons($this->user,$nl[$x]);
         }
 
         return $nl;

@@ -134,6 +134,7 @@
                 'calendar'=>1,
                 'event'=>1,
                 'groupnode'=>1,
+                'link'=>1,
                 'product'=>1,
                 'user'=>1
             )
@@ -156,12 +157,12 @@
                 'user'=>0-$lowest
             ),
             'target_owner_score'=>array(
-                'blog'=>-1,
-                'calendar'=>-1,
-                'event'=>-1,
-                'groupnode'=>-1,
-                'product'=>-1,
-                'user'=>-1
+                'blog'=>0,
+                'calendar'=>0,
+                'event'=>0,
+                'groupnode'=>0,
+                'product'=>0,
+                'user'=>0
             )
         ),
         8=>array(

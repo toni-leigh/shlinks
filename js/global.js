@@ -79,8 +79,8 @@
             success: function (new_html)
             {
                 $(".votes"+new_html[0]).html(new_html[1]);
-                $('.vote_up').on('click',upbind);
-                $('.vote_down').on('click',downbind);
+                $('#up'+id+'.vote_up').on('click',upbind);
+                $('#down'+id+'.vote_down').on('click',downbind);
             }
         });
     }
@@ -95,8 +95,8 @@
             success: function (new_html)
             {
                 $(".votes"+new_html[0]).html(new_html[1]);
-                $('.vote_up').on('click',upbind);
-                $('.vote_down').on('click',downbind);
+                $('#up'+id+'.vote_up').on('click',upbind);
+                $('#down'+id+'.vote_down').on('click',downbind);
             }
         });
     }
