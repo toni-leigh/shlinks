@@ -496,7 +496,9 @@
         for($x=0;$x<count($nl);$x++)
         {
             // link score
-                $points=$this->voting_model->get_score($nl[$x]['id']);
+                $this->db->select('count(vote) as score')->from('vote')->where(array('node_id'=>$nl[$x]['id'], 'vote'=>1));
+                $points_result=$this->db->get()->row_array();
+                $points=$points_result['score'];
 
             // other categories
                 $query=$this->db->select('*')->from('node_category')->where(array('node_id'=>$nl[$x]['id']));
