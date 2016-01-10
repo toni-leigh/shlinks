@@ -17,20 +17,12 @@
                             }
                             if ('user'==$node['type'])
                             {
-                                if ($node['id']==$user['id'])
-                                {
-                                    $prefix="My ";
-                                }
-                                else
-                                {
-                                    $prefix="";
-                                }
                                 // add three panel links
                                     ?>
                                         <!-- <a class='<?php echo $activity_sel; ?>' href='/<?php echo $node['url']; ?>/activity'>Activity</a> -->
-                                        <a class='<?php echo $all_sel; ?>' href='/<?php echo $node['url']; ?>/all'>All My Links</a>
-                                        <a class='<?php echo $links_sel; ?>' href='/<?php echo $node['url']; ?>/links'><?php echo $prefix; ?>Links</a>
-                                        <a class='<?php echo $votes_sel; ?>' href='/<?php echo $node['url']; ?>/votes'><?php echo $prefix; ?>Votes</a>
+                                        <a class='<?php echo $all_sel; ?>' href='/<?php echo $node['url']; ?>/all'>Collection</a>
+                                        <a class='<?php echo $links_sel; ?>' href='/<?php echo $node['url']; ?>/links'>Added</a>
+                                        <a class='<?php echo $votes_sel; ?>' href='/<?php echo $node['url']; ?>/votes'>Voted For</a>
                                     <?php
                             }
                             if (is_array($node_list))
