@@ -13,7 +13,7 @@
                         <?php
                             if (!in_array($node['id'],array(6)))
                             {
-                                echo $h1;
+                                echo "<h1>".$h1."</h1>";
                             }
                             if ('user'==$node['type'])
                             {
