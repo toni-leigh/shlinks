@@ -1,0 +1,62 @@
+/* NB CUT AND PASTE THIS INTO CSS FILE OR ADMIN CSS ... CUT DOWN ON HTTP */
+    
+/* CALENDAR STYLES */
+    .time { float:left; }
+    .blink { float:left; position:relative; z-index:1; padding:9px; color:#181818; opacity:1; margin-left:15px; -moz-box-shadow:0px 0px 2px 0px #000; -webkit-box-shadow:0px 0px 2px 0px #000; box-shadow:0px 0px 2px 0px #000; }
+    .half_hour { width:940px; float:left; border:1px solid #888; margin-bottom:5px; padding:9px; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+    .all_day { border:2px solid #444; padding:8px; background-color:#bbb; }
+    #day_chunk .blink {}
+    .daytime_name { float:left; margin-bottom:5px; }
+    .daytime_details { float:left; font-size:0.9em; font-weight:normal; }
+    .blink:hover { color:#fff; }
+    
+    .cs { float:left; border:1px solid #888; padding:4px; background-color:#fff; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+    .master_date { width:940px; float:left; margin:10px 0px; color:#181818; font-size:2.0em; font-weight:bold; text-align:center; }
+    .curr_slider { background-color:#44d; }
+    
+    #day_slider .cs { width:31px; height:40px; margin-right:2px; }
+    #month_slider .cs { width:66px; height:13px; margin-right:2px; font-size:0.9em; text-align:center; }
+    .ds_year, .ds_month { width:28px; height:12px; float:left; color:#999; font-size:0.8em; font-weight:bold; text-align:center; }
+    .ds_day { width:28px; float:left; text-align:center; }
+    
+    #month_chunk .date { width:114px; float:left; padding:5px 0px;font-size:0.8em; text-align:center; }
+    #month_chunk .month { width:938px; float:left; padding:0px 11px; }
+    #month_chunk .day { width:114px; height:114px; float:left; border:1px solid #888; margin:9px; background-color:#ffff80; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+    #month_chunk .dead_cell { background-color:#ddd; }
+    #month_chunk .day_heading { background-color:#ccc; height:20px; padding-top:4px; font-weight:bold; text-align:center; }
+    #month_chunk .blink { float:left; color:#fff; }
+    #month_chunk .bview { background-color:#9f0; }
+    #month_chunk .blink_32 { width:887px; margin-top:10px; background-color:#0a5; }
+    #month_chunk .blink_33 { width:217px; margin-top:50px; background-color:#00f; }
+    #month_chunk .blink_34 { width:617px; margin-top:15px; background-color:#05a; }
+    
+    #year_chunk { width:942px; float:left; padding:0px 9px; }
+    #year_chunk .month { width:296px; height:230px; float:left; margin:9px; overflow:hidden; }
+    #year_chunk .day { width:42px; height:22px; float:left; padding-top:8px; background-color:#ffff80; text-align:center; }
+    #year_chunk .dead_cell { background-color:#ddd; }
+    #year_chunk .day_heading { background-color:#ccc; height:20px; padding-top:3px; font-weight:bold; text-align:center; }
+    #year_chunk .blink {  }
+    #year_chunk .bview {  background-color:#9f0; }
+    #year_chunk .blink_32 { background-color:#00f; }
+    #year_chunk .blink_33 { background-color:#00f; }
+    #year_chunk .blink_34 { background-color:#05a; }
+    
+    .mheading { width:300px; height:30px; float:left; background-color:#7bf; font-size:1.5em; text-align:center; }
+    
+	.now { background-color:#f60; }
+    
+    #booking_form { width:400px; float:right; margin-top:0px; }
+    .booking_line { width:400px; float:left; border-bottom:1px solid #888; margin-bottom:4px; padding-bottom:2px; }
+    .bline_price { float:right; }
+    .bline_remove, .bline_add, .bline_sub,
+    .bline_add_deact, .bline_sub_deact{ width:20px; height:20px; float:right; background-image:url('/img/sprite.png'); -moz-border-radius:1px; -webkit-border-radius:1px; border-radius:1px; }
+    .bline_add, .bline_sub, .bline_add_deact, .bline_sub_deact { float:left; margin:-2px 5px 0px 0px; }
+    .bline_remove { background-position:-70px -210px; margin:-2px 0px 0px 5px; cursor:pointer; }
+    .bline_add { background-position:-50px -210px; cursor:pointer; }
+    .bline_add_deact { background-position:-50px -250px; }
+    .bline_sub { background-position:-30px -210px; cursor:pointer; }
+    .bline_sub_deact { background-position:-30px -250px; }
+    .bline_remove:hover, .bline_remove:active { background-position:-70px -230px; }
+    .bline_add:hover, .bline_add:active { background-position:-50px -230px; }
+    .bline_sub:hover, .bline_sub:active { background-position:-30px -230px; }
+    #booking_submit { opacity:0; }

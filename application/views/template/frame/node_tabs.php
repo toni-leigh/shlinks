@@ -1,0 +1,1 @@
+                        <?php echo $node_tabs; ?>

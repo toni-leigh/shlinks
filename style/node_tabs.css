@@ -1,0 +1,36 @@
+/* NB CUT AND PASTE THIS INTO CSS FILE OR ADMIN CSS ... CUT DOWN ON HTTP */
+
+
+    #node_tabs{width:100%;float:left;margin-bottom:20px;}
+    
+    /* DETAILS */
+        /* user header */
+            #user_details_header{width:568px;float:left;margin-bottom:20px;}
+                #udh_thumb{width:120px;height:120px;float:left;margin-right:9px;}
+                #block{width:55px;float:right;}
+            #node_text{width:568px;float:left;}
+            #main_details_image{float:right;margin-left:20px;}
+            
+        /* product add to basket panel */
+            .price_was{text-decoration:line-through;}
+            .sale_on{color:#ff0000;font-weight:bold;}
+            #not_enough_stock{color:#800000;}
+    
+    /* STREAM */
+        .strpanel{width:940px;float:left;margin-bottom:12px;padding:9px;}
+            .viewed{border:1px solid #7d689f;}
+            .notify{border:1px solid #f116af;background-color:#f9f9f9;}
+            .straimage{float:right;}
+            .strdate_notify, .strdate_viewed{width:103px;float:right;font-size:0.8em;}
+            .strdate_notify{color:#f116af;}
+            .strdate_viewed{color:#7d689f;}
+            .strimages{width:871px;float:left;margin-top:9px;}
+            .strimages img{float:left;margin-bottom:9px;}
+            
+    /* IMAGES */
+        #image_panel img{float:left;margin-bottom:20px;}
+        
+    /* FRIENDS */
+        .frname{width:551px;float:right;}
+        .frdesc{width:551px;height:60px;float:right;margin:9px 0px;}
+        .frimg{width:120px;height:120px;float:left;margin-right:9px;}

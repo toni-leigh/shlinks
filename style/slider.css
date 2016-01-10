@@ -1,0 +1,16 @@
+/* NB CUT AND PASTE THIS INTO CSS FILE OR ADMIN CSS ... CUT DOWN ON HTTP */
+
+/* SLIDER */ 			
+    .slbs,
+    .sqbs,
+    .slider { width:100%; float:left; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none;
+              -ms-user-select: none; user-select: none; }
+    
+    .img_panel,
+    .spnl,
+    .img_pad { float:left; }
+    
+    .viewer_window { overflow:hidden; }
+    .list_panel { position:relative; left:0px; }
+    
+    .slider img { float:left; }

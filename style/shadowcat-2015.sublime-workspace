@@ -1,0 +1,998 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"doc",
+				"documentaries"
+			],
+			[
+				"pos",
+				"pos:f	position:fixed"
+			],
+			[
+				"image",
+				"image-fixed__heading"
+			],
+			[
+				"imageDiv",
+				"imageDivCount"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"current",
+				"currentImage"
+			],
+			[
+				"index",
+				"indexCompare"
+			],
+			[
+				"next",
+				"nextTrigger"
+			],
+			[
+				"imag",
+				"imageList"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"as",
+				"aside-panel"
+			],
+			[
+				"pro",
+				"project-summary-in-left"
+			],
+			[
+				"scroll",
+				"scrollHandler"
+			],
+			[
+				"scr",
+				"scrollPointPassed"
+			],
+			[
+				"body",
+				"bodyTop"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"get",
+				"getBoundingClientRect"
+			],
+			[
+				"trigger",
+				"triggerClass"
+			],
+			[
+				"po",
+				"pos:r	position:relative"
+			],
+			[
+				"nav",
+				"navigation"
+			],
+			[
+				"text",
+				"text-decoration-color"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"cp",
+				"cur:p	cursor:pointer"
+			],
+			[
+				"grey",
+				"grey-very-light"
+			],
+			[
+				"contact",
+				"contact__form"
+			],
+			[
+				"butt",
+				"button-pair__vertical-breakpoint"
+			],
+			[
+				"font__",
+				"font__standout"
+			],
+			[
+				"fnt",
+				"font-family"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"button",
+				"button-pair__background--hover"
+			],
+			[
+				"service",
+				"services-introduction"
+			],
+			[
+				"content",
+				"content-is-centred"
+			],
+			[
+				"backgrun",
+				"background-color"
+			],
+			[
+				"prop",
+				"props"
+			],
+			[
+				"fcu",
+				"function"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"oran",
+				"orange-light"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"header",
+				"header__background-color"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"sass",
+				"sass_path"
+			],
+			[
+				"sas",
+				"sass_path"
+			],
+			[
+				"conca",
+				"concat"
+			],
+			[
+				"conc",
+				"concatenate"
+			],
+			[
+				"replace",
+				"replaceHTML"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"html",
+				"htmlreplace"
+			],
+			[
+				"prep",
+				"prepareForProduction"
+			],
+			[
+				"DEST",
+				"DEST_BUILD"
+			],
+			[
+				"deaf",
+				"defaultTasks"
+			],
+			[
+				"watc",
+				"watchHandler"
+			],
+			[
+				"D",
+				"DEST"
+			],
+			[
+				"js",
+				"jsxToJs"
+			],
+			[
+				"st",
+				"stubbed_cats"
+			],
+			[
+				"rel",
+				"reload_url"
+			],
+			[
+				"stubb",
+				"stubbedLinkSet"
+			],
+			[
+				"call",
+				"callCount"
+			],
+			[
+				"toHaveBeen",
+				"toHaveBeenCalled"
+			],
+			[
+				"bind",
+				"bindDialogLayerEvents"
+			],
+			[
+				"dialog",
+				"dialogLayer"
+			],
+			[
+				"appen",
+				"appendTo"
+			],
+			[
+				"and",
+				"andReturn"
+			],
+			[
+				"app",
+				"appendDialogLayer"
+			],
+			[
+				"append",
+				"appendTo"
+			],
+			[
+				"dia",
+				"dialogLayer"
+			],
+			[
+				"show",
+				"showTarget"
+			],
+			[
+				"ini",
+				"initializeDialogLayer"
+			],
+			[
+				"UN",
+				"UILoadIndicator"
+			],
+			[
+				"toHaveBeenCalled",
+				"toHaveBeenCalledWith"
+			],
+			[
+				"UI",
+				"UILoadIndicator"
+			],
+			[
+				"focus",
+				"focusDialog"
+			],
+			[
+				"focu",
+				"focusDialog"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"custom",
+				"customRangeDates"
+			],
+			[
+				"this_",
+				"this_month_end"
+			],
+			[
+				"this_month",
+				"this_month_start"
+			],
+			[
+				"range",
+				"rangeDates"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8\n\n6f6726db09ffa4977eea8976c0f35a9b85f62c2a\n\n",
+			"settings":
+			{
+				"buffer_size": 84,
+				"line_ending": "Unix",
+				"name": "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"
+			}
+		},
+		{
+			"contents": "Wayfarers chillwave kogi taxidermy, 3 wolf moon gentrify keffiyeh tacos try-hard shabby chic forage swag. Four dollar toast next level mixtape shoreditch plaid. Beard flexitarian cray, vice kinfolk fashion axe bespoke green juice single-origin coffee mumblecore biodiesel narwhal. Literally brooklyn kickstarter hoodie tilde, YOLO swag pour-over shabby chic whatever neutra lo-fi bushwick shoreditch. Ugh heirloom tote bag art party, kale chips 90's typewriter dreamcatcher readymade cliche narwhal roof party drinking vinegar everyday carry. Semiotics yr bicycle rights bushwick taxidermy, kitsch fanny pack sriracha cornhole salvia ramps actually synth. Ramps cliche iPhone, tacos readymade meh chambray health goth gochujang single-origin coffee brunch narwhal.\n\nCardigan blog wolf cronut, kale chips lo-fi pickled yr occupy pinterest lumbersexual meditation poutine shabby chic biodiesel. Gastropub vice mumblecore fingerstache, tattooed flexitarian asymmetrical put a bird on it. Pork belly flexitarian brunch jean shorts intelligentsia. Gluten-free fingerstache humblebrag farm-to-table hashtag lumbersexual. Quinoa actually fixie, synth tousled biodiesel flexitarian hashtag 8-bit. Paleo jean shorts migas, food truck whatever skateboard retro everyday carry chartreuse godard direct trade art party. Roof party disrupt hella mustache beard.\n\nTrust fund skateboard thundercats organic yr tofu, try-hard cornhole. Pickled taxidermy dreamcatcher cray, before they sold out mustache irony art party. Austin etsy gastropub fixie cred mlkshk shabby chic, offal affogato meh chia mumblecore. Taxidermy disrupt XOXO ugh vegan, kickstarter beard tousled brooklyn pabst before they sold out pug slow-carb mustache hashtag. Church-key disrupt readymade aesthetic cray. Street art forage plaid, hashtag green juice retro twee lomo fanny pack readymade cornhole paleo mustache bicycle rights bitters. Street art normcore messenger bag, scenester letterpress literally franzen irony butcher brooklyn single-origin coffee gentrify stumptown.\n\nAustin lumbersexual butcher, whatever mustache sriracha craft beer truffaut 3 wolf moon wolf schlitz brunch yuccie sartorial. Chambray 8-bit blog, green juice single-origin coffee scenester dreamcatcher ugh butcher. Cray VHS distillery, brooklyn narwhal meditation small batch tofu lumbersexual bushwick synth organic pinterest pabst. Cronut tousled occupy, yuccie beard wayfarers fingerstache crucifix mixtape locavore. Ugh mustache ramps, selvage actually portland bespoke banjo meh franzen listicle church-key vice chia kitsch. Banh mi artisan lomo, flannel roof party raw denim sartorial helvetica. Brooklyn tattooed gentrify, cray thundercats poutine mlkshk keytar sriracha single-origin coffee.\n\nDreamcatcher street art plaid, PBR&B whatever listicle thundercats 8-bit gluten-free celiac. Echo park single-origin coffee wolf green juice mlkshk crucifix, keytar franzen. Flannel stumptown tofu heirloom microdosing messenger bag. PBR&B fingerstache tofu polaroid, fashion axe truffaut chambray beard cray. Bushwick street art letterpress, distillery blog aesthetic master cleanse gochujang tilde next level banjo thundercats XOXO tumblr. Fingerstache tousled tacos post-ironic. Forage next level pickled craft beer.\n\nHelvetica pour-over tilde, seitan artisan fingerstache truffaut iPhone. Gentrify knausgaard helvetica, flexitarian hammock truffaut keytar cornhole vinyl iPhone ramps. Affogato gluten-free wayfarers keytar organic four dollar toast. Master cleanse yr mlkshk swag austin, church-key asymmetrical art party put a bird on it health goth wolf. Organic affogato fashion axe craft beer marfa fingerstache, keffiyeh microdosing jean shorts asymmetrical post-ironic. Cornhole artisan fanny pack, flexitarian ethical neutra kogi pour-over iPhone dreamcatcher deep v cliche. Wayfarers kickstarter tousled leggings shabby chic.\n\nFood truck hoodie letterpress retro, everyday carry put a bird on it brunch. Twee wolf humblebrag echo park kinfolk 3 wolf moon food truck. Tattooed blog iPhone hammock, schlitz brunch portland chia sriracha plaid stumptown ennui photo booth. Bespoke meggings DIY, plaid kogi pinterest echo park aesthetic cornhole green juice butcher. Chicharrones godard master cleanse retro. Church-key meggings freegan four dollar toast marfa. Poutine irony roof party, pork belly truffaut bespoke hella pitchfork taxidermy plaid tote bag pug ennui seitan vegan.",
+			"settings":
+			{
+				"buffer_size": 4425,
+				"line_ending": "Unix",
+				"name": "Wayfarers chillwave kogi taxidermy, 3 wolf moon ge"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/tonileigh/development/shadowcat",
+		"/Users/tonileigh/development/shadowcat/react-cart-stuff",
+		"/Users/tonileigh/development/shadowcat/src",
+		"/Users/tonileigh/development/shadowcat/src/modules",
+		"/Users/tonileigh/development/shadowcat/src/modules/logo",
+		"/Users/tonileigh/development/shadowcat/src/sections",
+		"/Users/tonileigh/development/shadowcat/src/sections/header",
+		"/Users/tonileigh/development/shadowcat/src/sections/heading",
+		"/Users/tonileigh/development/shadowcat/src/sections/our-choice-projects",
+		"/Users/tonileigh/development--personal/shadowcat/application",
+		"/Users/tonileigh/development--personal/shadowcat/application/controllers"
+	],
+	"file_history":
+	[
+		"/Users/tonileigh/development/shadowcat/index.html",
+		"/Users/tonileigh/development/shadowcat/border-collies.html",
+		"/Users/tonileigh/development/shadowcat/the-bondagers.html",
+		"/Users/tonileigh/development/shadowcat/farx4-promotional-videos.html",
+		"/Users/tonileigh/development/shadowcat/return-to-the-ridings-1.html",
+		"/Users/tonileigh/development/shadowcat/james-hugonin.html",
+		"/Users/tonileigh/development/shadowcat/beeline-britain.html",
+		"/Users/tonileigh/development/shadowcat/src/sections/our-choice-projects/our-choice-projects.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/header/_header.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/heading/_heading.scss",
+		"/private/var/folders/pk/xgstx8fd1jq4t072wg6__j7w0000gn/T/fz3temp-1/config.php",
+		"/private/var/folders/pk/xgstx8fd1jq4t072wg6__j7w0000gn/T/fz3temp-1/config 2.php",
+		"/private/var/folders/pk/xgstx8fd1jq4t072wg6__j7w0000gn/T/fz3temp-1/index.php",
+		"/private/var/folders/pk/xgstx8fd1jq4t072wg6__j7w0000gn/T/fz3temp-1/index 2.php",
+		"/Users/tonileigh/development/shadowcat/src/modules/logo/_logo.scss",
+		"/Users/tonileigh/work-docs--personal/sublime-projects/----------------- SPECIFIC/the-bondagers.html",
+		"/Users/tonileigh/development/shadowcat/:focus/modules/map/map.js",
+		"/Users/tonileigh/development/shadowcat/:focus/sections/image-fixed/_image-fixed.scss",
+		"/Users/tonileigh/development/shadowcat/:focus/sections/heading/_heading.scss",
+		"/Users/tonileigh/development/shadowcat/:focus/modules/project-summary/_project-summary.scss",
+		"/Users/tonileigh/development/shadowcat/:focus/modules/project-summary/project-summary.js",
+		"/Users/tonileigh/development/shadowcat/:focus/modules/map/_map.scss",
+		"/Users/tonileigh/development/shadowcat/:focus/sections/contact/contact.js",
+		"/Users/tonileigh/development/shadowcat/:focus/sections/contact/_contact.scss",
+		"/Users/tonileigh/development/shadowcat/:focus/common/_utility.scss",
+		"/Users/tonileigh/development/shadowcat/src/common/_reset.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/text-details/text-details.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/image-fixed/_image-fixed.scss",
+		"/Users/tonileigh/development/shadowcat/src/pages/video/video.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/our-choice-projects/_our-choice-projects.scss",
+		"/Users/tonileigh/development/shadowcat/src/common/_fonts-and-text.scss",
+		"/Users/tonileigh/development/shadowcat/src/modules/section-heading-with-strapline/_section-heading-with-strapline.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/call-to-action/_call-to-action.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/contact/_contact.scss",
+		"/Users/tonileigh/development/shadowcat/src/common/_variables.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/blog-small/_blog-small.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/text-details/_text-details.scss",
+		"/Users/tonileigh/development/shadowcat/src/pages/documentaries/documentaries.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/aside-panel/aside-panel.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/aside-panel/_aside-panel.scss",
+		"/Users/tonileigh/development/shadowcat/src/pages/video/_video.scss",
+		"/Users/tonileigh/development/shadowcat/src/pages/documentaries/_documentaries.scss",
+		"/Users/tonileigh/development/shadowcat/src/pages/home/home.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/testimonial/_testimonial.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/service-testimonials/service-testimonials.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/project-summary/_project-summary.scss",
+		"/Users/tonileigh/development--personal/shadowcat/application/controllers/api.php",
+		"/Users/tonileigh/development/shadowcat/video-production.html",
+		"/Users/tonileigh/development/shadowcat/src/sections/video-player/video-player.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/video-player/_video-player.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/video-panel/video-panel.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/project-summary/project-summary.js",
+		"/Users/tonileigh/development/shadowcat/src/style.scss",
+		"/Users/tonileigh/development/shadowcat/documentaries.html",
+		"/Users/tonileigh/development/shadowcat/src/common/utilities.js",
+		"/Users/tonileigh/development/shadowcat/video.html",
+		"/Users/tonileigh/development/shadowcat/src/sections/service-testimonials/_service-testimonials.scss",
+		"/Users/tonileigh/development/shadowcat/src/pages/service/service.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/image-fixed/image-fixed.js",
+		"/Users/tonileigh/development/shadowcat/src/pages/service/_service.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/call-to-action/call-to-action.js",
+		"/Users/tonileigh/development/shadowcat/src/common/_colours.scss",
+		"/Users/tonileigh/Desktop/npower-complaint.txt",
+		"/Users/tonileigh/development/shadowcat/javascript.js",
+		"/Users/tonileigh/development/shadowcat/src/common/_utility.scss",
+		"/Users/tonileigh/development/shadowcat/react-cart-stuff/basketcomponents.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/header/header.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/navigation/navigation.js",
+		"/Users/tonileigh/development/shadowcat/.gitignore",
+		"/Users/tonileigh/development/shadowcat/src/modules/navigation/_navigation.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/footer/_footer.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/button-pair/_button-pair.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/footer/footer.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/contact/contact.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/blog-small/blog-small__post.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/blog-small/blog-small.js",
+		"/Users/tonileigh/development/shadowcat/src/common/_buttons.scss",
+		"/Users/tonileigh/development/shadowcat/style.css",
+		"/Users/tonileigh/development/shadowcat/src/sections/video-spotlight/_video-spotlight.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/button-pair/button-pair.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/section-heading-with-strapline/section-heading-with-strapline.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/section-heading-simple/section-heading-simple.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/services-introduction/services-introduction.js",
+		"/Users/tonileigh/development/shadowcat/src/sections/services-introduction/_services-introduction.scss",
+		"/Users/tonileigh/development/shadowcat/js_temp/sections/services-introduction/services-introduction.js",
+		"/Users/tonileigh/development/shadowcat/src/common/_fonts.scss",
+		"/Users/tonileigh/development/shadowcat/src/pages/home/_home.scss",
+		"/Users/tonileigh/development/shadowcat/src/sections/video-spotlight/video-spotlight.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/navigation/navigation__link.js",
+		"/Users/tonileigh/development/shadowcat/src/modules/logo/logo.js",
+		"/Users/tonileigh/development/shadowcat/javascript2.js",
+		"/Users/tonileigh/development/shadowcat/gulpfile.js",
+		"/Users/tonileigh/development/shadowcat/assets/img/logo.svg",
+		"/Users/tonileigh/development/shadowcat/style.scss",
+		"/Users/tonileigh/development/shadowcat/files.rb",
+		"/Users/tonileigh/development/shadowcat/src/modules/button-small/_button-small.scss",
+		"/Users/tonileigh/development/shadowcat/src/modules/bread-crumbs/bread-crumbs.js",
+		"/Users/tonileigh/development/shadowcat/react-cart-stuff/heading.js",
+		"/Users/tonileigh/development/shadowcat/src/heading--test/heading--test.js",
+		"/Users/tonileigh/development/shadowcat/src/heading--test/_heading--test.scss",
+		"/Users/tonileigh/development/shadowcat/src/heading/_heading.scss",
+		"/Users/tonileigh/development/shadowcat/src/heading/heading.js",
+		"/Users/tonileigh/development/shadowcat/js_temp/heading/heading.js",
+		"/Users/tonileigh/development/shadowcat/build.js",
+		"/Users/tonileigh/development/shadowcat/css/master.css",
+		"/Users/tonileigh/development/shadowcat/src/another/_testing.scss",
+		"/Users/tonileigh/development/shadowcat/src/another/testing.js",
+		"/Users/tonileigh/development/shadowcat/react-cart/styles.css",
+		"/Users/tonileigh/development/shadowcat/react-cart/index.html",
+		"/Users/tonileigh/development/shadowcat/sass/test.scss",
+		"/Users/tonileigh/development/shadowcat/src/index.html",
+		"/Users/tonileigh/development/shadowcat/dist/index.html",
+		"/Users/tonileigh/development/shadowcat/dist/src/build.js",
+		"/Users/tonileigh/development/shadowcat/src/js/App.js",
+		"/Users/tonileigh/development/shadowcat/src/js/Child.js",
+		"/Users/tonileigh/development/shadowcat/src/js/Parent.js",
+		"/Users/tonileigh/development/shadowcat/dist/build/build.min.js",
+		"/Users/tonileigh/development--personal/links/dev/style/style.css",
+		"/Users/tonileigh/development--personal/links/dev/application/models/project_data_array_model.php",
+		"/Users/tonileigh/development--personal/links/dev/application/controllers/article_link.php",
+		"/Users/tonileigh/development--personal/links/dev/adds.php",
+		"/Users/tonileigh/development--personal/links/dev/application/config/voting.php",
+		"/Users/tonileigh/work-docs--personal/Links/adds.php",
+		"/Users/tonileigh/development--personal/links/dev/application/config/config.php",
+		"/Users/tonileigh/development--personal/links/dev/application/controllers/engage.php",
+		"/Users/tonileigh/development--personal/links/dev/application/models/engage_model.php",
+		"/Users/tonileigh/development--personal/links/style/application/models/project_data_array_model.php",
+		"/Users/tonileigh/development--personal/links/dev/application/config/routes.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/tonileigh/development/shadowcat/src",
+			"/Users/tonileigh/development/shadowcat/src/pages/video-production",
+			"/Users/tonileigh/development/shadowcat",
+			"/Users/tonileigh/development/shadowcat/src",
+			"/Users/tonileigh/development--personal/links/dev",
+			"",
+			"/Users/tonileigh/development/sage_one_addons",
+			"/Users/tonileigh/development/sage_one_addons/bank_feeds/spec/javascripts",
+			"/Users/tonileigh/development/sage_one_addons_uk",
+			"/Users/tonileigh/development/sage_one_addons",
+			"/Users/tonileigh/development/sage_one_advanced/host_app/spec"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"error",
+			"height: 98px;",
+			":focus",
+			"-bottom",
+			"24px",
+			"map",
+			"documentaries__",
+			"video_",
+			"http://shadowcatfilms.com/' + ",
+			"blue",
+			"video-production",
+			"green",
+			"blue",
+			"video-production",
+			"/_",
+			"documentary",
+			"documentaries",
+			"fap",
+			"//",
+			"summary__image",
+			"opacity ",
+			"image",
+			"summary",
+			"grey-mid",
+			"grey-very-light",
+			"' />\n        </div>",
+			"src: \"",
+			"props",
+			"onsole.lo",
+			"lor: $grey-",
+			"blue-light",
+			"x",
+			"{\n          show: ",
+			"On-location-in-Norway",
+			"(G",
+			" 0.2s",
+			"linear",
+			"0.3",
+			"right",
+			"-1",
+			"right",
+			".2",
+			"2",
+			"70",
+			".aside-panel",
+			"&",
+			"20",
+			"left",
+			"var ",
+			"La",
+			"window.Utilities.",
+			"green-dark",
+			"1200px",
+			"1060px",
+			"$header__padding-horizontal",
+			"98px",
+			"$header__central-height",
+			"3.125%",
+			"<p>",
+			"top",
+			"-small",
+			"15%",
+			"25%",
+			"50%",
+			"@media (min-width: 300px) {",
+			"http://l",
+			"project-",
+			"div",
+			"abstract",
+			"anel />",
+			"rgba($grey-very-light, 0.5)",
+			"green",
+			"      :",
+			"      ",
+			"0675",
+			"l-detail",
+			"address",
+			"orange",
+			"&:last-of-type",
+			"520px",
+			"__post",
+			"xt='",
+			"-",
+			"top",
+			"fap ",
+			"div",
+			"/>\n",
+			"CallToAction",
+			"$",
+			";",
+			"top",
+			"'].",
+			"1",
+			",",
+			"our-choice-projects",
+			" 0",
+			" $general-padding__bottom",
+			"div",
+			"navLiClass",
+			"font__heading",
+			"100%",
+			"49px",
+			":",
+			":t",
+			"98",
+			"77",
+			"heading",
+			"div",
+			"key",
+			"item",
+			".url",
+			".html",
+			"url",
+			"div",
+			"/_",
+			"pages",
+			"  '",
+			"  # ",
+			"sections",
+			" ",
+			"- ",
+			"pages",
+			"File.new(",
+			"folder",
+			"f}",
+			"f",
+			" ",
+			"- "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"video",
+			"video-production",
+			"",
+			"font__standout",
+			"Toni Leigh"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 84,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								42
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8",
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "/Users/tonileigh/work-docs--personal/sublime-projects/----------------- SPECIFIC",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								765,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "Wayfarers chillwave kogi taxidermy, 3 wolf moon ge",
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"default_dir": "/Users/tonileigh/work-docs--personal/sublime-projects/----------------- SPECIFIC",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.963181148748,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "shadowcat-2015.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "kirk",
+		"selected_items":
+		[
+			[
+				"kirk",
+				"~/development--personal/knvh/application/views/pages/knvh.sublime-project"
+			],
+			[
+				"pol",
+				"~/work-docs--personal/sublime-projects/polymer.sublime-project"
+			],
+			[
+				"knv",
+				"~/development--personal/knvh/application/views/pages/knvh.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 322.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

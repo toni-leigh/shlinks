@@ -1,0 +1,154 @@
+/* MASS ADJUST */   
+    #mass_adjust { width:700px; height:30px; float:left; margin-top:5px; padding-top:7px; }
+    #show_mass_adjust { width:120px; float:left; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;  }
+    #show_mass_adjust label { float:left; margin-top:7px; }
+    #adjust_check { float:left; margin-top:8px; }
+    #mass_adjust_panel { float:left; }
+    .ma_radio { float:left; margin:8px 0px 0px 0px; cursor:pointer; }
+    #mass_adjust_panel label { float:left; margin:7px 10px 0px 0px; }
+    #ma_value { width:60px; }
+    #ma_submit { height:26px; float:left; margin:2px 0px 0px 20px; padding:3px 9px 5px; }
+    
+    .ma_radios { float:left; border-bottom:1px solid #676767; margin-right:15px; padding-bottom:5px; }
+    
+    #mass_adjust_warning { width:700px; float:left; margin:13px 0px 0px; font-weight:bold; }
+    
+/* VOUCHERS */
+    .voucher_type_field { width:100%; float:left; margin:20px 0px 0px 20px; color:#181818; }
+    .voucher_type_label { width:100%; float:left; margin:0px 0px 5px; font-size:1.2em; }
+    #add_voucher_submit, #add_voucher_type_submit { margin-right:20px; }
+    .voucher_text_field { padding:4px; }
+    #voucher_id { font-size:1.2em; letter-spacing:0.2em; }
+    
+    
+        
+        
+    /* POSTAGE */
+        #p_thresh{width:200px;float:left;margin-left:8px;font-size:1.2em;}
+        #weight_brackets{width:540px;float:left;margin:0px 210px;}
+        .class_heading_left{width:218px;height:25px;float:left;font-weight:bold;text-align:center;}
+        .class_heading{width:71px;height:25px;float:left;margin-left:9px;font-weight:bold;text-align:center;}
+        .min_value, .max_value, .class_cost{margin-bottom:16px;}
+        .min_value, .max_value{width:80px;border-color:#e77d0a;}
+        .class_cost{width:50px;border-color:#9948f2;}
+        .bracket_dash{float:left;margin:7px;font-weight:bold;}
+        .pound_label{float:left;margin:7px 4px 7px 10px;font-weight:bold;}
+        
+    /* VAR TYPE DEFINITION */
+        .var_values{width:520px;float:left;margin:0px 210px 20px;border:1px solid #777;padding:9px;}
+            .var_values_heading{border-bottom:1px solid #777;margin-bottom:10px;padding-bottom:5px;color:#777;font-size:1.2em;font-weight:bold;}
+            .var_values_add_new{width:520px;float:left;margin-bottom:10px;}
+                #var_value_adder .form_field{width:400px;height:18px;margin:0px;}
+                .new_var_value_submit{width:70px;float:right;margin:0px;outline:none;}
+            .var_value_row{width:100%;float:left;}
+            .remove_var_value{float:right;color:#800000;font-weight:bold;}
+            .remove_block{float:right;}
+            
+            
+
+/* NODE VARIATIONS */
+    #nvar_page_wide{width:930px;float:left;}
+        #nvar_page_wide select{min-width:82px;margin:0px;}
+        #nvar_page_wide .adpanel, #nvar_page_wide .adaction_panel{width:930px;}
+        #nvar_page_wide .adinst_panel{width:920px;}
+    #nvtype_panel{border:2px solid #777;padding:2px;}
+        .nvar_selector{height:22px;padding-top:5px;background-color:#e1ffe9;cursor:pointer;}
+        .nvar_output{height:22px;padding-top:5px;float:left;}
+        .nvar_selector:hover, .nvar_selected{background-color:#2dff62;}
+        #nvtype_panel label, #addnv_panel label{float:left;height:19px;padding:6px 5px 5px;}
+        .nvar_selector label{cursor:pointer;}
+        .nvar_selector input{float:left;margin:8px 0px 0px 8px;}
+        #nvar_type_submit{float:left;margin:10px;}
+        
+    #stock_setting{width:98px;float:right;}
+        #stock_setting input{width:36px;float:left;}
+        #stock_setting .stock{border-color:#9948f2;margin:5px 3px 0px 0px;}
+        #add_stock_button{color:#9948f2;font-size:2.5em;cursor:pointer;}
+        
+    #nv_adder{width:852px;}
+    #nvtype_panel .adaction_panel, #addnv_panel .adaction_panel{width:852px;float:left;margin-left:78px;}
+    
+    .pvariation_input, .var_column,  .saved_nvar_value, .nvar_string_val{min-width:86px;text-align:center;}
+    .nvar_selector, .nvar_output{min-width:81px;text-align:center;}
+    .var_column{margin:3px 0px 3px 0px;}
+    .nvar_selector, .nvar_output{margin:3px 5px 3px 0px;}
+    .saved_nvar_value{float:left;}
+    .pvariation_input input, #nv_panel .nvar_postcalc input{width:70px;}
+    #nv_panel .advar_price .form_field{width:55px;margin:0px 3px 0px 0px;}}
+    
+    .nvar_postcalc, .nvar_price{width:80px;}
+    
+    #nv_panel{border:2px solid #777;padding:2px;}
+        #edit_curr_heading{float:right;margin:-7px -7px 7px 7px;padding:5px 5px 7px 7px;-moz-border-radius:0px 0px 0px 3px;-webkit-border-radius:0px 0px 0px 3px;border-radius:0px 0px 0px 3px;color:#fff;font-size:1.5em;background-color:#777;}
+        #sale_settings{width:395px;height:30px;float:left;border-top:1px solid rgba(140, 198, 255, 0.6);border-right:1px solid rgba(140, 198, 255, 0.6);border-left:1px solid rgba(140, 198, 255, 0.6);padding-top:4px;background-color:rgba(213, 234, 255, 0.6);}
+            #sale_type_heading{width:7px;font-weight:bold;}
+            #master_sale_type{width:30px;float:left;margin-top:-3px;}
+                #master_sale_type input{float:left;margin-top:1px;margin-bottom:2px;}
+                .sale_type_text{float:left;margin:1px 0px;}
+                #apply_sale{float:left;padding:4px 10px 0px 3px;color:rgba(140, 198, 255, 0.6);font-size:1.2em;font-weight:bold;cursor:pointer;}
+            #sale_dates .form_field{width:65px;margin:0px 5px 0px 1px;}
+            #nv_panel .advar_sale .form_field, #sale_dates .form_field, #master_sale_price .form_field{border-color:rgb(140, 198, 255);}
+            #nv_panel .advar_sale .form_field{width:57px;margin:0px 3px 0px 3px;}
+        .nvar_row{width:929px;float:left;margin-bottom:3px;padding:3px 0px;}
+            .nvar_remove{width:20px;float:right;padding-top:3px;}
+            .nvar_main{float:right;}
+                .nvar_main input{margin:6px 5px 0px 3px;}
+            .main_output{float:right;margin-top:5px;color:#181818;font-weight:bold;}
+            #master_sale_price .form_field, #nv_adder .form_field{width:42px;margin:0px 3px 0px 3px;}
+            #nv_adder .pvariation_input input{width:70px;}
+                .advar_price, .advar_sale{width:67px;margin-left:3px;}
+                .advar_price{float:left;}
+                .advar_sale{float:left;height:33px;border-right:1px solid rgba(140, 198, 255, 0.6);border-left:1px solid rgba(140, 198, 255, 0.6);margin:-4px 0px -7px;padding-top:4px;background-color:rgba(213, 234, 255, 0.6);}  
+                    .pound{margin:5px 5px 0px 0px;}
+            .nvar_string{float:left;padding:5px 0px 0px 5px;font-weight:bold;}
+            #nv_panel .advar_price{font-weight:bold;}
+                #nv_panel .advar_price .form_field{border:1px solid #000;}
+                #nv_panel .advar_price .form_field:focus{border:2px solid #0983bd;outline:none;padding:3px;}
+            #nv_panel .nvar_postcalc .form_field{width:50px;float:left;margin:0px 5px 0px 0px;}
+            #nv_panel .nvar_stockmain .form_field{width:36px;margin:0px;}
+                #nv_panel .nvar_stockmain .stock{border-color:#9948f2;margin-right:3px;}
+                #nv_panel .nvar_stockmain .thresh{border-color:#e77d0a;}
+                .nvar_stockmain{width:98px;float:right;}
+            .instock_row, .dd-dragel .dd-handle
+            {                
+                background:#e1ffe9;
+                background: -moz-linear-gradient(top, #f1fff9 0%, #d1efd9 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1fff9), color-stop(100%,#d1efd9));
+                background: -webkit-linear-gradient(top, #f1fff9, 0% #d1efd9 100%);
+                background: -o-linear-gradient(top, #f1fff9 0%, #d1efd9 100%);
+                background: -ms-linear-gradient(top, #f1fff9 0%, #d1efd9 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1fff9', endColorstr='#d1efd9',GradientType=0 );
+                background: linear-gradient(top, #f1fff9 0%, #d1efd9 100%);
+                border-top:1px solid #c1dfc9;border-right:1px solid #c1dfc9;border-bottom:1px solid #c1dfc9;
+            }
+            .outstock_row
+            {
+                background:#fff3d9;
+                background: -moz-linear-gradient(top, #ffffe9 0%, #efe3c9 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffe9), color-stop(100%,#efe3c9));
+                background: -webkit-linear-gradient(top, #ffffe9, 0% #efe3c9 100%);
+                background: -o-linear-gradient(top, #ffffe9 0%, #efe3c9 100%);
+                background: -ms-linear-gradient(top, #ffffe9 0%, #efe3c9 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffe9', endColorstr='#efe3c9',GradientType=0 );
+                background: linear-gradient(top, #ffffe9 0%, #efe3c9 100%);
+                border-top:1px solid #dfd3b9;border-right:1px solid #dfd3b9;border-bottom:1px solid #dfd3b9;
+            }
+            .remove_row
+            {
+                background:#ffb7b6;
+                background: -moz-linear-gradient(top, #ffc7c6 0%, #efa7a6 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc7c6), color-stop(100%,#efa7a6));
+                background: -webkit-linear-gradient(top, #ffc7c6, 0% #efa7a6 100%);
+                background: -o-linear-gradient(top, #ffc7c6 0%, #efa7a6 100%);
+                background: -ms-linear-gradient(top, #ffc7c6 0%, #efa7a6 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc7c6', endColorstr='#efa7a6',GradientType=0 );
+                background: linear-gradient(top, #ffc7c6 0%, #efa7a6 100%);
+                border-top:1px solid #df9796;border-right:1px solid #df9796;border-bottom:1px solid #df9796;
+            }
+    #addnv_panel{border:2px solid #777;padding:2px;}
+        #add_var_heading{float:right;margin:-7px -7px 7px 7px;padding:5px 5px 7px 7px;-moz-border-radius:0px 0px 0px 3px;-webkit-border-radius:0px 0px 0px 3px;border-radius:0px 0px 0px 3px;color:#fff;font-size:1.5em;background-color:#777;}
+    
+    #nv_preview{background-color:#e0e0e7;}
+        #price_column{font-weight:bold;}
+
+        

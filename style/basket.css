@@ -1,0 +1,24 @@
+/* NB CUT AND PASTE THIS INTO CSS FILE OR ADMIN CSS ... CUT DOWN ON HTTP */
+
+
+    /* Basket */
+        #basket_panel{width:700px;float:left;}
+			#postage_row { opacity:0; }
+			.basket_row{ width:100%; float:left; border-bottom:1px dotted #ccc; margin-bottom:5px; }
+				.basket_quantity { width:50px; margin-bottom:7px; }
+				.brow_text { width:634px; float:left; margin-left:5px; padding-top:8px; }
+					.brow_details{float:left;}
+					.brow_subtotal{float:right;}
+        #reassurance_panel{ width:220px; float:right; border:1px dotted #ccc; padding:9px; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+			.total_row { width:220px; float:left; border-bottom:1px dotted #ccc; margin-bottom:7px; padding:4px 0px 10px; font-size:1.2em; font-weight:bold; }
+			.gt_heading{ width:80px; float:left; }       
+			.voucher_colour{color:#ff5500;font-weight:bold;}
+			.strike_through{text-decoration:line-through;}
+			#voucher_header { width:100%; float:left; font-size:1.2em; font-weight:bold; }
+				#voucher_message { width:200px; float:left; border:1px solid #444; margin:9px 0px; padding:9px; background-color:#eee; color:#666; font-weight:bold; text-align:center; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+				#voucher_field { width:198px; height:30px; border:1px solid #666; margin:8px 0px; padding:6px 10px; color:#666; font-size:1.4em; font-weight:bold; text-align:center; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+				#voucher_field:focus { border:2px solid #666; padding:5px 9px; }
+				#voucher_submit { width:196px; margin:0px; padding:15px 12px; font-size:1.4em; font-weight:bold; }
+				
+			#reassurance_checkouts { width:100%; float:left; border-top:1px dotted #ccc; padding-top:9px; }
+				#pp_button { width:220px; margin:0px; padding:15px 12px; font-size:1.6em; font-weight:bold; }
