@@ -71,6 +71,8 @@
 
     function vote_down(id)
     {
+        $('#up'+id+'.vote_up').off('click');
+        $('#down'+id+'.vote_down').off('click');
         $.ajax({
             type:'GET',
             url: '/voting/down',
@@ -87,6 +89,8 @@
 
     function vote_up(id)
     {
+        $('#up'+id+'.vote_up').off('click');
+        $('#down'+id+'.vote_down').off('click');
         $.ajax({
             type:'GET',
             url: '/voting/up',
