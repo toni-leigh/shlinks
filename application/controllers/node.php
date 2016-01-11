@@ -7,7 +7,6 @@
  * @package		Template
  * @subpackage	Template Libraries
  * @category	Template Libraries
- * @copyright   Copyright (c) Toni Leigh Sharpe (2012)
  *
  * node controller
  *   - responds to the user action of requesting a particular url

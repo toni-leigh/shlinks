@@ -7,7 +7,6 @@
  * @package		Template
  * @subpackage	Template Libraries
  * @category	Template Libraries
- * @copyright   Copyright (c) Toni Leigh Sharpe (2012)
  * engage controller - does various tasks associated with engaging the user, such as hash password etc.
 */
     class Engage extends Universal {

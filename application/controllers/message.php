@@ -8,7 +8,6 @@
  * @subpackage	Template Libraries
  * @category	Template Libraries
  * @author		Toni Leigh Sharpe
- * @copyright   Copyright (c) Toni Leigh Sharpe (2012)
 */
     class Message extends Universal {
 

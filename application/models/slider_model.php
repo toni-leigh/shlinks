@@ -8,7 +8,6 @@
  * @subpackage	Template Libraries
  * @category	Template Libraries
  * @author		Toni Leigh Sharpe
- * @copyright   Copyright (c) Toni Leigh Sharpe (2012)
  *
  * this model uses nodes and images to generate sliders for use on the site
  * currently there are panel sliders - mostly for iumage galleries but will alside html too

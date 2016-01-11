@@ -7,7 +7,6 @@
  * @package		Template
  * @subpackage	Template Libraries
  * @category	Template Libraries
- * @copyright   Copyright (c) Toni Leigh Sharpe (2012)
  *
  * following is like subscribing, can apply to any node
  * befriending is like a serious connection, between users or request to join groups, invloves acceptance, rejection etc.

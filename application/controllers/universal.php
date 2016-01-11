@@ -6,7 +6,6 @@
  * @package		Template
  * @subpackage	Template Libraries
  * @category	Template Libraries
- * @copyright   Copyright (c) Toni Leigh Sharpe (2012)
  * sits inbetween the CI classes and our own controllers allowin global fuctionality to be added to all our controllers
 */
     class Universal extends CI_Controller {
