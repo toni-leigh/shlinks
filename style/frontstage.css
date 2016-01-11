@@ -82,6 +82,8 @@
 		}
 		.purple,
 		#me_link:hover,
+		.register-link:hover,
+		.register-link-sel,
 		#me_link_sel,
 		#user_panel h1,
 		#user_panel #heading_panel .sel,
@@ -519,9 +521,17 @@
 #name_warning { width: 100%; float: left; margin: 0 210px 20px;}
 
 .register-link { float: right; }
-
-
-
+.register-link[href="/register"] { margin-right: 0; }
+		.register-link:hover,
+		.register-link-sel
+		{
+		    background: #589b2b;
+		    background: -moz-linear-gradient(top, #68ab3b 0%, #589b2b 100%);
+			background: -webkit-linear-gradient(top, #68ab3b 0%, #589b2b 100%);
+			background: linear-gradient(top, #68ab3b0%, #589b2b 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68ab3b', endColorstr='#589b2b',GradientType=0 );
+		}
+		.form .red { width: 100%; float:left; margin-bottom: 20px; text-align: center; }
 
 
 
